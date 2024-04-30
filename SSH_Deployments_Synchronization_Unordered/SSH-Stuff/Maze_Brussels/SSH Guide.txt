@@ -1,0 +1,12 @@
+
+	C:\WINDOWS\System32\OpenSSH\sshd.exe -D -e -ddd
+
+	1. services.msc ->openSSH server -> automatic start
+	
+	1.1 transfer the administrators_authorized_keys	 ---> C:\ProgramData\ssh of the other machine
+	
+	2. C:\ProgramData\ssh ->
+		create a file -> administrators_authorized_keys
+		icacls administrators_authorized_keys /inheritance:r
+		icacls administrators_authorized_keys /grant SYSTEM:`(F`)
+		icacls administrators_authorized_keys /grant BUILTIN\Administrators:`(F`)

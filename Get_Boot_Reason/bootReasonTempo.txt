@@ -1,0 +1,20 @@
+import subprocess
+
+output = subprocess.run([
+    'powershell.exe', 
+    '-noprofile', 
+    '-executionpolicy',
+    '-bypass',
+    '-c', 
+    'get-eventlog system | where-object {$_.eventid -eq 1074} | select Timegenerated, EntryType, Message'
+  ], 
+  capture_output=True)
+
+# CAVEAT: The *system*'s OEM code page is assumed for decoding the 
+#         raw captured stdout output to text.
+#         Any in-session changes to the active OEM code page via `chcp`
+#         are NOT recognized; e.g., if you've changed to page 65001 (UTF-8)
+#         you must use 'utf-8' explicitly.
+print(output.stdout.decode('oem'))
+
+

@@ -1,0 +1,17 @@
+[INFO] | [2023-05-05 12:31:32] | [WS]Starting server at address:192.168.1.125 , port:6789
+[INFO] | [2023-05-05 12:31:32] | [Main]This script is using SESSION_LOGGING
+[INFO] | [2023-05-05 12:31:32] | [Exception]Extra class:__init__() missing 1 required positional argument: 'loop'
+[INFO] | [2023-05-05 12:31:32] | [MQTT-Connection]Connecting to broker:localhost port:9001
+[INFO] | [2023-05-05 12:31:34] | [32m[MQTT]Client connected with the Broker with code 0.[0m
+[INFO] | [2023-05-05 12:31:34] | [MQTT]Setting subscriptions
+[INFO] | [2023-05-05 12:31:34] | [MQTT]Topics:[('/themaze/letterfloorGameplay_1c6bbe/rpi/game/teamRegisterSuccessful/letterfloor', 0), ('/themaze/letterfloorGameplay_1c6bbe/rpi/game/reset/letterfloor', 0), ('/themaze/letterfloorGameplay_1c6bbe/rpi/game/settings/letterfloor', 0), ('/themaze/letterfloorGameplay_1c6bbe/rpi/game/panicbutton/letterfloor/response', 0), ('/themaze/booted/letterfloorGameplay_1c6bbe', 0)]
+[INFO] | [2023-05-05 12:31:34] | [MQTT-Send-Topic]:/themaze/booted
+[INFO] | [2023-05-05 12:31:34] | [MQTT-Send-Data]:{"timestamp": 1683279094191, "ipAddress": "192.168.1.125", "deviceId": "letterfloorGameplay_1c6bbe", "roomName": "letterfloor", "deviceType": "RPI_GAMEPLAY"}
+[INFO] | [2023-05-05 12:31:35] | [MQTT-Receive-Topic]:/themaze/booted/letterfloorGameplay_1c6bbe
+[INFO] | [2023-05-05 12:31:35] | [MQTT-Receive-Data]:{"timestamp":1683279095208,"result":"OK","deviceType":"RPI_GAMEPLAY","roomName":"letterfloor"}
+[INFO] | [2023-05-05 12:31:35] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_1c6bbe/rpi/game/reset/letterfloor
+[INFO] | [2023-05-05 12:31:35] | [MQTT-Receive-Data]:{"timestamp":1683279095209}
+[INFO] | [2023-05-05 12:31:35] | [State]==================RESET==========================
+[INFO] | [2023-05-05 12:31:35] | [Music]Stopped
+[INFO] | [2023-05-05 12:31:35] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-05 12:31:35] | [MQTT-Send-Data]:{"word": " ", "nextletter": 0, "gameStatus": "LOSE"}

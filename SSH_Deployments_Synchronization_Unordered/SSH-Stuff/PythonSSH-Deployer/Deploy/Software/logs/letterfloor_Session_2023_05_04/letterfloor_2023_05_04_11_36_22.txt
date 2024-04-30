@@ -1,0 +1,130 @@
+[INFO] | [2023-05-04 11:36:22] | [WS]Starting server at address:192.168.1.42 , port:6789
+[INFO] | [2023-05-04 11:36:22] | [Main]This script is using SESSION_LOGGING
+[INFO] | [2023-05-04 11:36:22] | [MQTT-Connection]Connecting to broker:localhost port:9001
+[INFO] | [2023-05-04 11:36:25] | [32m[MQTT]Client connected with the Broker with code 0.[0m
+[INFO] | [2023-05-04 11:36:25] | [MQTT]Setting subscriptions
+[INFO] | [2023-05-04 11:36:25] | [MQTT]Topics:[('/themaze/letterfloorGameplay_448c70/rpi/game/teamRegisterSuccessful/letterfloor', 0), ('/themaze/letterfloorGameplay_448c70/rpi/game/reset/letterfloor', 0), ('/themaze/letterfloorGameplay_448c70/rpi/game/settings/letterfloor', 0), ('/themaze/letterfloorGameplay_448c70/rpi/game/panicbutton/letterfloor/response', 0), ('/themaze/booted/letterfloorGameplay_448c70', 0)]
+[INFO] | [2023-05-04 11:36:25] | [MQTT-Send-Topic]:/themaze/booted
+[INFO] | [2023-05-04 11:36:25] | [MQTT-Send-Data]:{"timestamp": 1683189385039, "ipAddress": "192.168.1.42", "deviceId": "letterfloorGameplay_448c70", "roomName": "letterfloor", "deviceType": "RPI_GAMEPLAY"}
+[INFO] | [2023-05-04 11:36:25] | [WS-Receive]:{'category': 'connection-init', 'sender': 'Master_1803821432', 'receiver': 'server'}
+[INFO] | [2023-05-04 11:36:26] | [MQTT-Receive-Topic]:/themaze/booted/letterfloorGameplay_448c70
+[INFO] | [2023-05-04 11:36:26] | [MQTT-Receive-Data]:{"timestamp":1683189386059,"result":"OK","deviceType":"RPI_GAMEPLAY","roomName":"letterfloor"}
+[INFO] | [2023-05-04 11:36:26] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/reset/letterfloor
+[INFO] | [2023-05-04 11:36:26] | [MQTT-Receive-Data]:{"timestamp":1683189386059}
+[INFO] | [2023-05-04 11:36:26] | [State]==================RESET==========================
+[INFO] | [2023-05-04 11:36:26] | [WS-Send]:{"type": "gameplay", "value": "stop"}
+[INFO] | [2023-05-04 11:36:26] | [Music]Stopped
+[INFO] | [2023-05-04 11:36:26] | [WS-Send]:{"type": "gameplay", "value": "openDoor"}
+[INFO] | [2023-05-04 11:36:26] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 11:36:26] | [WS-Send]:{"type": "gameplay", "value": "closeLights"}
+[INFO] | [2023-05-04 11:36:26] | [MQTT-Send-Data]:{"word": " ", "nextletter": 0, "gameStatus": "LOSE"}
+[INFO] | [2023-05-04 11:36:26] | [Room]==============RESET==============
+[INFO] | [2023-05-04 11:36:26] | [WS-Receive]:{'category': 'gameplay', 'value': 'stop:ok'}
+[INFO] | [2023-05-04 11:36:26] | [WS-Receive]:{'category': 'gameplay', 'value': 'openDoor:ok'}
+[INFO] | [2023-05-04 11:36:26] | [WS-Receive]:{'category': 'gameplay', 'value': 'closeLights:ok'}
+[INFO] | [2023-05-04 11:36:53] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/teamRegisterSuccessful/letterfloor
+[INFO] | [2023-05-04 11:36:53] | [MQTT-Receive-Data]:{"timestamp":1683189413434,"gameId":"fd698482-b80c-4884-9dec-6a27d5edb8c0"}
+[INFO] | [2023-05-04 11:36:53] | [State]==================TEAM-REGISTER==================
+[INFO] | [2023-05-04 11:36:53] | [Game]GameID:fd698482-b80c-4884-9dec-6a27d5edb8c0
+[INFO] | [2023-05-04 11:36:53] | [Music]Stopped
+[INFO] | [2023-05-04 11:36:53] | [Music]Main Theme
+[INFO] | [2023-05-04 11:36:53] | [WS-Send]:{"type": "gameplay", "value": "openLights"}
+[INFO] | [2023-05-04 11:36:53] | Sending default message doorClosed...
+[INFO] | [2023-05-04 11:36:53] | [WS-Send]:{"type": "gameplay", "value": "openDoor"}
+[INFO] | [2023-05-04 11:36:53] | [WS-Send]:{"type": "gameplay", "value": "checkDoor"}
+[INFO] | [2023-05-04 11:36:53] | [WS-Receive]:{'category': 'gameplay', 'value': 'openLights:ok'}
+[INFO] | [2023-05-04 11:36:53] | [WS-Receive]:{'category': 'gameplay', 'value': 'openDoor:ok'}
+[INFO] | [2023-05-04 11:36:53] | [WS-Receive]:{'category': 'gameplay', 'value': 'checkDoor:ok'}
+[INFO] | [2023-05-04 11:36:53] | [MQTT-Send-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/doorClosed/letterfloor
+[INFO] | [2023-05-04 11:36:53] | [MQTT-Send-Data]:{"timestamp": 1683189413941, "gameId": "fd698482-b80c-4884-9dec-6a27d5edb8c0"}
+[INFO] | [2023-05-04 11:36:55] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/settings/letterfloor
+[INFO] | [2023-05-04 11:36:55] | [MQTT-Receive-Data]:{"timestamp":1683189415616,"difficulty":"HARD","gameId":"fd698482-b80c-4884-9dec-6a27d5edb8c0","gameStartedTimestamp":1683189415599,"teamPlayersNumber":5,"teamName":"DATTEAMV21","playersWristbandsList":[{"username":"TG6","wristbandNumber":6,"wristbandColor":6},{"username":"TG5","wristbandNumber":5,"wristbandColor":5},{"username":"TG4","wristbandNumber":4,"wristbandColor":4},{"username":"TG3","wristbandNumber":3,"wristbandColor":3},{"username":"TG7","wristbandNumber":7,"wristbandColor":1}],"time":180,"pointsToWin":0,"roundsTarget":3}
+[INFO] | [2023-05-04 11:36:55] | [State]==================SETTINGS=======================
+[INFO] | [2023-05-04 11:36:55] | [Game]GameID:fd698482-b80c-4884-9dec-6a27d5edb8c0
+[INFO] | [2023-05-04 11:36:55] | [Game-Configuration]Players:5
+[INFO] | [2023-05-04 11:36:55] | [Game-Configuration]Wristbands:6,5,4,3,1
+[INFO] | [2023-05-04 11:36:55] | [Game-Configuration]PointsToWin:0
+[INFO] | [2023-05-04 11:36:55] | [Game-Configuration]RoundsTarget:3
+[INFO] | [2023-05-04 11:36:55] | [Game-Configuration]Teamname:DATTEAMV21
+[INFO] | [2023-05-04 11:36:55] | [Game-Configuration]Gametime:180
+[INFO] | [2023-05-04 11:36:55] | [Music]Stopped
+[INFO] | [2023-05-04 11:36:55] | [Music]Main Theme
+[INFO] | [2023-05-04 11:36:55] | [WS-Send]:{"type": "gameplay", "value": "openLights"}
+[INFO] | [2023-05-04 11:36:55] | [WS-Send]:{"type": "gameplay", "value": "start"}
+[INFO] | [2023-05-04 11:36:55] | [Gameplay-Timer]gameTimer started
+[INFO] | [2023-05-04 11:36:55] | [Gameplay-Timer]countdownTimer started
+[INFO] | [2023-05-04 11:36:55] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 11:36:55] | [MQTT-Send-Data]:{"word": "MARKED", "nextletter": 0, "gameStatus": "PLAYING"}
+[INFO] | [2023-05-04 11:36:55] | [WS-Receive]:{'category': 'gameplay', 'value': 'openLights:ok'}
+[INFO] | [2023-05-04 11:36:55] | [Letterfloor]The new Word:MARKED
+[INFO] | [2023-05-04 11:36:55] | [Room]==============GAME-GOT-CONFIGURATION-IS-STARTING==============
+[INFO] | [2023-05-04 11:36:55] | [WS-Receive]:{'category': 'gameplay', 'value': 'start:ok'}
+[INFO] | [2023-05-04 11:37:20] | [Letterfloor]Letter I is pressed
+[INFO] | [2023-05-04 11:37:20] | [Letterfloor]Wrong letter ,should be pressed ->M
+[INFO] | [2023-05-04 11:37:20] | [Game]==================================FINISHED:LOSE==================================
+[INFO] | [2023-05-04 11:37:20] | [MQTT-Send-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/gameEnded/letterfloor
+[INFO] | [2023-05-04 11:37:20] | [MQTT-Send-Data]:{"timestamp": 1683189440008, "gameId": "fd698482-b80c-4884-9dec-6a27d5edb8c0", "reason": "LOSE", "timeAllocated": 180, "timeSpent": 24, "timeLeft": 156}
+[INFO] | [2023-05-04 11:37:20] | [Music]Stopped
+[INFO] | [2023-05-04 11:37:20] | [Music]Failsound
+[INFO] | [2023-05-04 11:37:20] | [Standby]Grandpiano
+[INFO] | [2023-05-04 11:37:20] | [Room]==============STANDBY==============
+[INFO] | [2023-05-04 11:37:20] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 11:37:20] | [MQTT-Send-Data]:{"word": 0, "nextletter": 0, "gameStatus": "LOSE"}
+[INFO] | [2023-05-04 11:37:20] | [WS-Receive]:{'category': 'gameplay', 'value': 'letterI'}
+[INFO] | [2023-05-04 11:37:20] | [WS-Send]:{"type": "gameplay", "value": "stop"}
+[INFO] | [2023-05-04 11:37:20] | [WS-Send]:{"type": "gameplay", "value": "closeallbuttonsleds"}
+[INFO] | [2023-05-04 11:37:20] | [WS-Receive]:{'category': 'gameplay', 'value': 'stop:ok'}
+[INFO] | [2023-05-04 11:37:20] | [WS-Receive]:{'category': 'gameplay', 'value': 'closeallbuttonsleds:ok'}
+[INFO] | [2023-05-04 11:37:25] | [Regame]Is open now.
+[INFO] | [2023-05-04 11:37:27] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/settings/letterfloor
+[INFO] | [2023-05-04 11:37:27] | [MQTT-Receive-Data]:{"timestamp":1683189447305,"difficulty":"HARD","gameId":"f73905c4-76f9-4f1b-9c05-38960023beca","gameStartedTimestamp":1683189447295,"teamPlayersNumber":5,"teamName":"DATTEAMV21","playersWristbandsList":[{"username":"TG6","wristbandNumber":6,"wristbandColor":6},{"username":"TG5","wristbandNumber":5,"wristbandColor":5},{"username":"TG4","wristbandNumber":4,"wristbandColor":4},{"username":"TG3","wristbandNumber":3,"wristbandColor":3},{"username":"TG7","wristbandNumber":7,"wristbandColor":1}],"time":180,"pointsToWin":0,"roundsTarget":3}
+[INFO] | [2023-05-04 11:37:27] | [State]==================SETTINGS=======================
+[INFO] | [2023-05-04 11:37:27] | [Game]GameID:f73905c4-76f9-4f1b-9c05-38960023beca
+[INFO] | [2023-05-04 11:37:27] | [Game-Configuration]Players:5
+[INFO] | [2023-05-04 11:37:27] | [Game-Configuration]Wristbands:6,5,4,3,1
+[INFO] | [2023-05-04 11:37:27] | [Game-Configuration]PointsToWin:0
+[INFO] | [2023-05-04 11:37:27] | [Game-Configuration]RoundsTarget:3
+[INFO] | [2023-05-04 11:37:27] | [Game-Configuration]Teamname:DATTEAMV21
+[INFO] | [2023-05-04 11:37:27] | [Game-Configuration]Gametime:180
+[INFO] | [2023-05-04 11:37:27] | [Music]Stopped
+[INFO] | [2023-05-04 11:37:27] | [Music]Main Theme
+[INFO] | [2023-05-04 11:37:27] | [WS-Send]:{"type": "gameplay", "value": "openLights"}
+[INFO] | [2023-05-04 11:37:27] | [Gameplay-Timer]gameTimer started
+[INFO] | [2023-05-04 11:37:27] | [WS-Send]:{"type": "gameplay", "value": "start"}
+[INFO] | [2023-05-04 11:37:27] | [Gameplay-Timer]countdownTimer started
+[INFO] | [2023-05-04 11:37:27] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 11:37:27] | [WS-Receive]:{'category': 'gameplay', 'value': 'openLights:ok'}
+[INFO] | [2023-05-04 11:37:27] | [MQTT-Send-Data]:{"word": "MARKUP", "nextletter": 0, "gameStatus": "PLAYING"}
+[INFO] | [2023-05-04 11:37:27] | [Letterfloor]The new Word:MARKUP
+[INFO] | [2023-05-04 11:37:27] | [Room]==============GAME-GOT-CONFIGURATION-IS-STARTING==============
+[INFO] | [2023-05-04 11:37:27] | [WS-Receive]:{'category': 'gameplay', 'value': 'start:ok'}
+[INFO] | [2023-05-04 11:37:30] | [Letterfloor]Letter Q is pressed
+[INFO] | [2023-05-04 11:37:30] | [Letterfloor]Wrong letter ,should be pressed ->M
+[INFO] | [2023-05-04 11:37:30] | [Game]==================================FINISHED:LOSE==================================
+[INFO] | [2023-05-04 11:37:30] | [MQTT-Send-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/gameEnded/letterfloor
+[INFO] | [2023-05-04 11:37:30] | [MQTT-Send-Data]:{"timestamp": 1683189450658, "gameId": "f73905c4-76f9-4f1b-9c05-38960023beca", "reason": "LOSE", "timeAllocated": 180, "timeSpent": 3, "timeLeft": 177}
+[INFO] | [2023-05-04 11:37:30] | [Music]Stopped
+[INFO] | [2023-05-04 11:37:30] | [Music]Failsound
+[INFO] | [2023-05-04 11:37:30] | [Standby]Grandpiano
+[INFO] | [2023-05-04 11:37:30] | [Room]==============STANDBY==============
+[INFO] | [2023-05-04 11:37:30] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 11:37:30] | [MQTT-Send-Data]:{"word": 0, "nextletter": 0, "gameStatus": "LOSE"}
+[INFO] | [2023-05-04 11:37:30] | [WS-Receive]:{'category': 'gameplay', 'value': 'letterQ'}
+[INFO] | [2023-05-04 11:37:30] | [WS-Send]:{"type": "gameplay", "value": "stop"}
+[INFO] | [2023-05-04 11:37:30] | [WS-Send]:{"type": "gameplay", "value": "closeallbuttonsleds"}
+[INFO] | [2023-05-04 11:37:30] | [WS-Receive]:{'category': 'gameplay', 'value': 'stop:ok'}
+[INFO] | [2023-05-04 11:37:30] | [WS-Receive]:{'category': 'gameplay', 'value': 'closeallbuttonsleds:ok'}
+[INFO] | [2023-05-04 11:37:35] | [Regame]Is open now.
+[INFO] | [2023-05-04 11:38:05] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_448c70/rpi/game/reset/letterfloor
+[INFO] | [2023-05-04 11:38:05] | [MQTT-Receive-Data]:{"timestamp":1683189485945}
+[INFO] | [2023-05-04 11:38:05] | [State]==================RESET==========================
+[INFO] | [2023-05-04 11:38:05] | [Music]Stopped
+[INFO] | [2023-05-04 11:38:05] | [WS-Send]:{"type": "gameplay", "value": "stop"}
+[INFO] | [2023-05-04 11:38:05] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 11:38:05] | [WS-Send]:{"type": "gameplay", "value": "openDoor"}
+[INFO] | [2023-05-04 11:38:05] | [MQTT-Send-Data]:{"word": " ", "nextletter": 0, "gameStatus": "LOSE"}
+[INFO] | [2023-05-04 11:38:05] | [WS-Send]:{"type": "gameplay", "value": "closeLights"}
+[INFO] | [2023-05-04 11:38:05] | [Room]==============RESET==============
+[INFO] | [2023-05-04 11:38:05] | [WS-Receive]:{'category': 'gameplay', 'value': 'stop:ok'}
+[INFO] | [2023-05-04 11:38:05] | [WS-Receive]:{'category': 'gameplay', 'value': 'openDoor:ok'}
+[INFO] | [2023-05-04 11:38:05] | [WS-Receive]:{'category': 'gameplay', 'value': 'closeLights:ok'}

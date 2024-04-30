@@ -1,0 +1,3 @@
+Put them in C:/LinuxUtils
+add Enviriomental Variable to PATH -> to look on C:/LinuxUtils
+Open terminal and use anything like -> tail

@@ -1,0 +1,5 @@
+cmd
+
+shutdown /r /t 60 /c "Shutdown from MGServer" /f /d p:4:1
+
+msg = '''shutdown /s /t 1 /c "Shutdown from MGServer" /f /d p:4:1'''

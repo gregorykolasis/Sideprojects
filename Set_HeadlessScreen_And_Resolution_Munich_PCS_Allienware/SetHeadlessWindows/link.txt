@@ -1,0 +1,5 @@
+https://www.amyuni.com/forum/viewtopic.php?t=3030
+
+cd c:\temp\usbmmid_v2 (or whatever destination folder you chose)
+deviceinstaller64 install usbmmidd.inf usbmmidd
+deviceinstaller64 enableidd 1

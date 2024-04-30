@@ -1,0 +1,93 @@
+[INFO] | [2023-05-04 14:44:21] | [WS]Starting server at address:192.168.1.42 , port:6789
+[INFO] | [2023-05-04 14:44:21] | [Main]This script is using SESSION_LOGGING
+[INFO] | [2023-05-04 14:44:21] | [MQTT-Connection]Connecting to broker:localhost port:9001
+[INFO] | [2023-05-04 14:44:23] | [32m[MQTT]Client connected with the Broker with code 0.[0m
+[INFO] | [2023-05-04 14:44:23] | [MQTT]Setting subscriptions
+[INFO] | [2023-05-04 14:44:23] | [MQTT]Topics:[('/themaze/letterfloorGameplay_91e1d4/rpi/game/teamRegisterSuccessful/letterfloor', 0), ('/themaze/letterfloorGameplay_91e1d4/rpi/game/reset/letterfloor', 0), ('/themaze/letterfloorGameplay_91e1d4/rpi/game/settings/letterfloor', 0), ('/themaze/letterfloorGameplay_91e1d4/rpi/game/panicbutton/letterfloor/response', 0), ('/themaze/booted/letterfloorGameplay_91e1d4', 0)]
+[INFO] | [2023-05-04 14:44:23] | [MQTT-Send-Topic]:/themaze/booted
+[INFO] | [2023-05-04 14:44:23] | [MQTT-Send-Data]:{"timestamp": 1683200663909, "ipAddress": "192.168.1.42", "deviceId": "letterfloorGameplay_91e1d4", "roomName": "letterfloor", "deviceType": "RPI_GAMEPLAY"}
+[INFO] | [2023-05-04 14:44:24] | [MQTT-Receive-Topic]:/themaze/booted/letterfloorGameplay_91e1d4
+[INFO] | [2023-05-04 14:44:24] | [MQTT-Receive-Data]:{"timestamp":1683200664926,"result":"OK","deviceType":"RPI_GAMEPLAY","roomName":"letterfloor"}
+[INFO] | [2023-05-04 14:44:24] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_91e1d4/rpi/game/reset/letterfloor
+[INFO] | [2023-05-04 14:44:24] | [MQTT-Receive-Data]:{"timestamp":1683200664927}
+[INFO] | [2023-05-04 14:44:24] | [State]==================RESET==========================
+[INFO] | [2023-05-04 14:44:24] | [Music]Stopped
+[INFO] | [2023-05-04 14:44:24] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 14:44:24] | [MQTT-Send-Data]:{"word": " ", "nextletter": 0, "gameStatus": "LOSE"}
+[INFO] | [2023-05-04 14:44:24] | [Room]==============RESET==============
+[INFO] | [2023-05-04 15:07:38] | [WS-Receive]:{'category': 'connection-init', 'sender': 'Master_1803821432', 'receiver': 'server'}
+[INFO] | [2023-05-04 15:08:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:121'}
+[INFO] | [2023-05-04 15:08:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:70'}
+[INFO] | [2023-05-04 15:09:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:234'}
+[INFO] | [2023-05-04 15:09:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:118'}
+[INFO] | [2023-05-04 15:10:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:149'}
+[INFO] | [2023-05-04 15:10:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:246'}
+[INFO] | [2023-05-04 15:11:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:252'}
+[INFO] | [2023-05-04 15:11:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:76'}
+[INFO] | [2023-05-04 15:12:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:68'}
+[INFO] | [2023-05-04 15:12:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:205'}
+[INFO] | [2023-05-04 15:13:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:119'}
+[INFO] | [2023-05-04 15:13:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:135'}
+[INFO] | [2023-05-04 15:14:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:207'}
+[INFO] | [2023-05-04 15:14:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:253'}
+[INFO] | [2023-05-04 15:15:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:164'}
+[INFO] | [2023-05-04 15:15:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:158'}
+[INFO] | [2023-05-04 15:16:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:242'}
+[INFO] | [2023-05-04 15:16:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:117'}
+[INFO] | [2023-05-04 15:17:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:176'}
+[INFO] | [2023-05-04 15:17:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:151'}
+[INFO] | [2023-05-04 15:18:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:113'}
+[INFO] | [2023-05-04 15:18:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:140'}
+[INFO] | [2023-05-04 15:19:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:189'}
+[INFO] | [2023-05-04 15:19:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:149'}
+[INFO] | [2023-05-04 15:20:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:108'}
+[INFO] | [2023-05-04 15:20:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:225'}
+[INFO] | [2023-05-04 15:21:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:95'}
+[INFO] | [2023-05-04 15:21:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:112'}
+[INFO] | [2023-05-04 15:22:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:175'}
+[INFO] | [2023-05-04 15:22:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:180'}
+[INFO] | [2023-05-04 15:23:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:205'}
+[INFO] | [2023-05-04 15:23:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:253'}
+[INFO] | [2023-05-04 15:24:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:104'}
+[INFO] | [2023-05-04 15:24:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:215'}
+[INFO] | [2023-05-04 15:25:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:180'}
+[INFO] | [2023-05-04 15:25:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:119'}
+[INFO] | [2023-05-04 15:26:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:157'}
+[INFO] | [2023-05-04 15:26:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:83'}
+[INFO] | [2023-05-04 15:27:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:106'}
+[INFO] | [2023-05-04 15:27:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:70'}
+[INFO] | [2023-05-04 15:28:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:105'}
+[INFO] | [2023-05-04 15:28:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:224'}
+[INFO] | [2023-05-04 15:29:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:215'}
+[INFO] | [2023-05-04 15:29:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:114'}
+[INFO] | [2023-05-04 15:30:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:89'}
+[INFO] | [2023-05-04 15:30:33] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:149'}
+[INFO] | [2023-05-04 15:31:03] | [WS-Receive]:{'category': 'gameplay', 'value': '[Timeout]Bus:1 Addr:1 Name:Grand-Basic Token:179'}
+[INFO] | [2023-05-04 15:31:20] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_91e1d4/rpi/game/reset/letterfloor
+[INFO] | [2023-05-04 15:31:20] | [MQTT-Receive-Data]:{"timestamp":1683203480834}
+[INFO] | [2023-05-04 15:31:20] | [State]==================RESET==========================
+[INFO] | [2023-05-04 15:31:20] | [WS-Send]:{"type": "gameplay", "value": "stop"}
+[INFO] | [2023-05-04 15:31:20] | [Music]Stopped
+[INFO] | [2023-05-04 15:31:20] | [WS-Send]:{"type": "gameplay", "value": "openDoor"}
+[INFO] | [2023-05-04 15:31:20] | [MQTT-Send-Topic]:lettergame/screen
+[INFO] | [2023-05-04 15:31:20] | [WS-Send]:{"type": "gameplay", "value": "closeLights"}
+[INFO] | [2023-05-04 15:31:20] | [MQTT-Send-Data]:{"word": " ", "nextletter": 0, "gameStatus": "LOSE"}
+[INFO] | [2023-05-04 15:31:20] | [WS-Receive]:{'category': 'gameplay', 'value': 'stop:ok'}
+[INFO] | [2023-05-04 15:31:20] | [Room]==============RESET==============
+[INFO] | [2023-05-04 15:31:20] | [WS-Receive]:{'category': 'gameplay', 'value': 'openDoor:ok'}
+[INFO] | [2023-05-04 15:31:20] | [WS-Receive]:{'category': 'gameplay', 'value': 'closeLights:ok'}
+[INFO] | [2023-05-04 15:31:44] | [MQTT-Receive-Topic]:/themaze/letterfloorGameplay_91e1d4/rpi/game/teamRegisterSuccessful/letterfloor
+[INFO] | [2023-05-04 15:31:44] | [MQTT-Receive-Data]:{"timestamp":1683203504441,"gameId":"db6373f4-f8da-4c9f-8c7f-684c297f0ab3"}
+[INFO] | [2023-05-04 15:31:44] | [State]==================TEAM-REGISTER==================
+[INFO] | [2023-05-04 15:31:44] | [Game]GameID:db6373f4-f8da-4c9f-8c7f-684c297f0ab3
+[INFO] | [2023-05-04 15:31:44] | [Music]Stopped
+[INFO] | [2023-05-04 15:31:44] | [Music]Main Theme
+[INFO] | [2023-05-04 15:31:44] | Sending default message doorClosed...
+[INFO] | [2023-05-04 15:31:44] | [WS-Send]:{"type": "gameplay", "value": "openLights"}
+[INFO] | [2023-05-04 15:31:44] | [WS-Send]:{"type": "gameplay", "value": "openDoor"}
+[INFO] | [2023-05-04 15:31:44] | [WS-Send]:{"type": "gameplay", "value": "checkDoor"}
+[INFO] | [2023-05-04 15:31:44] | [WS-Receive]:{'category': 'gameplay', 'value': 'openLights:ok'}
+[INFO] | [2023-05-04 15:31:44] | [WS-Receive]:{'category': 'gameplay', 'value': 'openDoor:ok'}
+[INFO] | [2023-05-04 15:31:44] | [WS-Receive]:{'category': 'gameplay', 'value': 'checkDoor:ok'}
+[INFO] | [2023-05-04 15:31:44] | [MQTT-Send-Topic]:/themaze/letterfloorGameplay_91e1d4/rpi/game/doorClosed/letterfloor
+[INFO] | [2023-05-04 15:31:44] | [MQTT-Send-Data]:{"timestamp": 1683203504948, "gameId": "db6373f4-f8da-4c9f-8c7f-684c297f0ab3"}

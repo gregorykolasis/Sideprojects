@@ -1,0 +1,30 @@
+https://stackoverflow.com/questions/261638/how-do-i-protect-python-code-from-being-read-by-users
+
+
+
+You enforce a license in a court of law. It has nothing to do with technologically securing something.
+
+In fact, licenses are used to protect ownership even when the material is publicly disseminated. For instance, you can't keep a book, or a music CD or a DVD movie secret from a buyer. The whole point of them buying it is to read it, or listen to it or view it. And then they will know.
+
+Licensing is how publishers try to prevent you from copying what they just sold to you and have you sell it to someone else and thereby undermine their future sales. It works if people follow the law.
+
+Not everyone does follow the law. That's why there are lawsuits. A lot of the time, that's enough to keep illegal copies / uses to a reasonably low level. But to sue an infringer you have to find them first, and that isn't always easy.
+
+Copy protection is a technological way to try to prevent copying. The buyer may or may not have the technological sophistication to break it and make a copy. But you immediately reduce the potential for violation by the number of people who aren't sophisticated enough -- unless they buy jailbreak software from someone who is sophisticated enough.
+
+The problem with copy protection of any sort is that you might also make it harder for legitimate uses too. So that discourages legitimate use, and may limit sales, probably things you don't want to do. So paper books, most CDs, etc. don't employ copy protection and rely solely on licenses. DVDs and e-Books often still use copy protections schemes.
+
+Python is generally designed to be a cleartext interpreted language. There are many advantages to this, both for the programmer of the python app, and for the developers of python interpreters. For one thing, because the code is not compiled down to a specific processor, it can run on many of them, without extra steps like recompilation. That's a pretty good advantage in some cases. So most python code is open to everyone's eyes, and people use licenses to protect their interests.
+
+Sometimes people use "obfuscation" techniques (Obfuscating Python code?) with interpreted code like Python as a form of copy protection. For example, you send "byte code" instead of text. This makes it hard to immediately read it and understand it. Generally unmotivated users won't want to read your code or copy it anyway, so you aren't really protecting yourself from them.
+
+But motivated people who want to read your code are probably other programmers, who will know how to reverse interpret it from the byte codes back to readable text. You can do things like strip comments, use bizarre variable names, and stick in trash code that does nothing, but you are also making it harder for you to support. So ultimately, if you want to write in Python, you probably won't benefit from doing this. If you want to make it really hard to read, you might want to re code it in C++ or an assembler and compile it. But there are reverse compilers too, so if what you are protecting is really worth someone going to a lot of effort to read they probably can. This is the problem with every copy protection scheme.
+
+That's why some media still don't use wide spread copy protection and rely on legal licensing instead. Most CDs aren't copy protected. When you buy a CD you only get a personal use license. If you pirate the music, make massive numbers of copies and sell them to make money, you've infringed the author's copyright and exceeded terms of their limited personal use license. So if the recording company or their agent the RIAA can find you, they can take you to court and get damages awarded based on how much money your act of piracy cost them. That's why the RIAA got Napster shut down, and made examples of a bunch of individuals who copied music from it.
+
+If you are in the US (or most countries which are signatories of the Berne convention) and create a work of art, literature or some code, you explicitly have a copyright on it, simply by claiming it with a Copyright notice. You don't need to formally register a copy anywhere. So, now you have the right to put any limits on who can make a copy and under what circumstances. You grant those limited rights to someone via your license. So if you say that they can't copy it and redistribute it to anyone else, that's your license. If you find out that they ignored your terms you can sue. It is not cheap to sue, and it is not always easy to find infringers unless they are blatant. But unless they are, probably they aren't damaging you very much either.
+
+Depending on what rules you want to enforce on your licensees you may be able to use a standard licensing agreement like the GPL, or Creative Commons or other license. Or a lawyer can draw up one that limits any specific use that you are concerned with .
+
+
+https://keygen.sh/docs/choosing-a-licensing-model/offline-licenses/
