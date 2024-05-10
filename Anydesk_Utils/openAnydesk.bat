@@ -1,0 +1,1 @@
+start "" "C:\Program Files (x86)\AnyDesk\anydesk.exe" --start
