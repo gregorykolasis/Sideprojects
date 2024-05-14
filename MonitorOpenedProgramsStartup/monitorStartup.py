@@ -6,7 +6,12 @@ try:
     import wmi
 except ModuleNotFoundError:
     os.system("pip install wmi")
-    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv) 
+    os.execv(sys.executable, ['python'] + sys.argv) 
+
+'''
+    Windows users only
+    1. Settings -> Change User Account Control Settings -> Never notify me when ...
+'''
 
 # PYTHON_PATH         = "python"                     #r"C:\Users\intelligent69\AppData\Local\Programs\Python\Python39\python.exe"
 # CHECKER_SCRIPT_PATH = f"{path}/startupPrograms.py" #C:\Users\intelligent69\Desktop\OpenStartUpPrograms\checkStartupPrograms.py"
