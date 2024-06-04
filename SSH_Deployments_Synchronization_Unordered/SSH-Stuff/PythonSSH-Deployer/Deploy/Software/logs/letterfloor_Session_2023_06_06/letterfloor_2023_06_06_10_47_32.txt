@@ -1,9 +1,0 @@
-[INFO] | [2023-06-06 10:47:32] | [WS]Starting server at address:192.168.1.42 , port:6789
-[INFO] | [2023-06-06 10:47:32] | [Main]This script is using SESSION_LOGGING
-[INFO] | [2023-06-06 10:47:32] | [Exception]Extra class:__init__() missing 1 required positional argument: 'loop'
-[INFO] | [2023-06-06 10:47:32] | [MQTT-Connection]Connecting to broker:localhost port:9001
-[INFO] | [2023-06-06 10:47:34] | [32m[MQTT]Client connected with the Broker with code 0.[0m
-[INFO] | [2023-06-06 10:47:34] | [MQTT]Setting subscriptions
-[INFO] | [2023-06-06 10:47:34] | [MQTT]Topics:[('/themaze/letterfloorGameplay_97b385/rpi/game/teamRegisterSuccessful/letterfloor', 0), ('/themaze/letterfloorGameplay_97b385/rpi/game/reset/letterfloor', 0), ('/themaze/letterfloorGameplay_97b385/rpi/game/settings/letterfloor', 0), ('/themaze/letterfloorGameplay_97b385/rpi/game/panicbutton/letterfloor/response', 0), ('/themaze/booted/letterfloorGameplay_97b385', 0)]
-[INFO] | [2023-06-06 10:47:34] | [MQTT-Send-Topic]:/themaze/booted
-[INFO] | [2023-06-06 10:47:34] | [MQTT-Send-Data]:{"timestamp": 1686037654353, "ipAddress": "192.168.1.42", "deviceId": "letterfloorGameplay_97b385", "roomName": "letterfloor", "deviceType": "RPI_GAMEPLAY"}
