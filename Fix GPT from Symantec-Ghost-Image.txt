@@ -1,30 +1,35 @@
+Scenario -> Fix MBR Image to GPT after first time use with Media Bootable USB (Windows NT)
 
-****** First Steps
+	1. mbr2gpt /convert /disk:0 /allowFullOS
 
-Insert Windows Bootable USB -> Wait for the Window to appear
-Language to Install -> English (United States)
-Time and currency format -> English (United States)
-Keyboard or input method -> US
+Scenario -> Fix GPT Image after Ghosting
 
-PRESS -> Shift + F10 to Open the Windows Terminal
+    ****** First Steps
 
-****** First Steps
+    Insert Windows Bootable USB -> Wait for the Window to appear
+    Language to Install -> English (United States)
+    Time and currency format -> English (United States)
+    Keyboard or input method -> US
 
-1.  bootsect /nt60 sys
-2.  diskpart
-3.  list disk
-4.  select disk 0
-5.  list volume
-6.  select vol 1
-7.  assign letter=n:
-8.  list volume
-9.  exit
-10. n:
-11. format n: /fs:fat32
-12. bcdboot c:\windows /s n: /f UEFI
+    PRESS -> Shift + F10 to Open the Windows Terminal
 
-Or faster way discovered by Dimitris
+    ****** First Steps
 
-1. C:
-2. format C: /fs:fat32
-3. bcdboot  E:/windows /s C: /f UEFI
+    1.  bootsect /nt60 sys
+    2.  diskpart
+    3.  list disk
+    4.  select disk 0
+    5.  list volume
+    6.  select vol 1
+    7.  assign letter=n:
+    8.  list volume
+    9.  exit
+    10. n:
+    11. format n: /fs:fat32
+    12. bcdboot c:\windows /s n: /f UEFI
+
+    Or faster way discovered by Dimitris
+
+    1. C:
+    2. format C: /fs:fat32
+    3. bcdboot  E:/windows /s C: /f UEFI
