@@ -1,3 +1,15 @@
+
+****** First Steps
+
+Insert Windows Bootable USB -> Wait for the Window to appear
+Language to Install -> English (United States)
+Time and currency format -> English (United States)
+Keyboard or input method -> US
+
+PRESS -> Shift + F10 to Open the Windows Terminal
+
+****** First Steps
+
 1.  bootsect /nt60 sys
 2.  diskpart
 3.  list disk
@@ -13,5 +25,6 @@
 
 Or faster way discovered by Dimitris
 
-1. format C: /fs:fat32
-2. bcdboot  E:/windows /s C: /f UEFI
+1. C:
+2. format C: /fs:fat32
+3. bcdboot  E:/windows /s C: /f UEFI
