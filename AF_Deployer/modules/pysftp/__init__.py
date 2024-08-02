@@ -13,11 +13,9 @@ import paramiko
 from paramiko import SSHException, AuthenticationException   # make available
 from paramiko import AgentKey, RSAKey, DSSKey
 
-from pysftp.exceptions import (CredentialException, ConnectionException,
-                               HostKeysException)
+from pysftp.exceptions import (CredentialException, ConnectionException,HostKeysException)
 from pysftp.helpers import (st_mode_to_int, WTCallbacks, path_advance,
                             path_retreat, reparent, walktree, cd, known_hosts)
-
 
 __version__ = "0.2.9"
 # pylint: disable = R0913,C0302
@@ -58,7 +56,7 @@ class CnOpts(object):   # pylint:disable=r0903
             wmsg += "You will need to explicitly load HostKeys "
             wmsg += "(cnopts.hostkeys.load(filename)) or disable"
             wmsg += "HostKey checking (cnopts.hostkeys = None)."
-            warnings.warn(wmsg, UserWarning)
+            #warnings.warn(wmsg, UserWarning)
         else:
             if len(self.hostkeys.items()) == 0:
                 raise HostKeysException('No Host Keys Found')

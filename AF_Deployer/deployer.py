@@ -77,7 +77,7 @@ def deploy(folder,exludeFiles=None):
     global host,room
     cnopts = CnOpts()
     cnopts.hostkeys = None
-    #print(f"[deploy]Host:{host}")
+    print(f"[Deployer] Folder:{folder} Room:{room} Host:{host}")
     try:
         with Connection(host, username=username, password = password , cnopts=cnopts) as sftp:
             try:
@@ -113,8 +113,16 @@ def sayHello():
     executeTerminalCommand(cmd)
     print(f"[sayHello] Room:{room}")
 
+def anydeskRenewer():
+    cmd = 'cd c:/IE/Software/anydesk && renewAnydesk.bat'
+    executeTerminalCommand(cmd)
+
 def getAnydesk():
     cmd = 'cd c:/IE/Software/anydesk && getAnydesk.bat'
+    executeTerminalCommand(cmd)
+
+def deleteFirstTimeBooted():
+    cmd = 'del "c:\\Users\\Mindtrap\\.last_boot_date"'
     executeTerminalCommand(cmd)
 
 def deleteLogs():
@@ -134,6 +142,11 @@ def clearLogs():
     deleteLogs()
     #startSoftware()
 
+def clearTrashFromProgrammer():
+    cmd = 'rmdir /s /q "C:/IE/Programmer/Libraries"'
+    executeTerminalCommand(cmd)
+
+
 FolderToGrab = 'Mirror'
 Home = '../../' #Going to C:/ in Windows
 Cur = getCurrentPath()
@@ -144,7 +157,12 @@ Folders = getDeployFolders(f"{Cur}/{FolderToGrab}")
 f = open(f'{Cur}/hostnames.json')
 Hostnames = json.load(f)
 
-canCheatRooms = ['justdoit','climbing','pharaoh','rabbithole','jungler','thefactory' , 'bubblebobble' ]
+canCheatRooms   = ['rabbithole','climbing','justdoit','pharaoh','thejungler','thefactory', 'bubblebobble' ] 
+roomsWithLidars = ['climbing' , 'justdoit', 'pharaoh', 'pyramids', 'rabbithole', 'thejungler', 'thefactory']
+roomsWithPoints = ['alleyoops','highlightbars','goal','spacejam','funinthebarn','thegulf','thepitcher','thegulf']
+
+# [updated] climbing perimenw 
+# [lidarsCalibration-Everyday]  extraFarming only for Marvin with 15 secs , 25 secs only Hardcalibration
 
 def massJoblist():
     global host,room
@@ -153,12 +171,16 @@ def massJoblist():
         ip = Hostnames[x]
         host = ip
         try:
-            if True:
-            #print(f"[Deploying] For->{room}")
+            if room == 'climbing':             
+                sayHello()
+                #getAnydesk()
+                #anydeskRenewer()
                 #deploy(SOFTWARE)
+                #deleteFirstTimeBooted()
+                #clearTrashFromProgrammer()
                 #runConfig()   
                 #clearLogs()
-                restartHost()
+                #restartHost()
         except Exception as e:
             print(f"[massJoblist] Error:{e} IP:{host} Room:{room}")
 

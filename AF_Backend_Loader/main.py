@@ -12,6 +12,8 @@ path = os.path.abspath(os.path.join(__file__, "../"))
 from libs.myLogger import setLogger
 from libs.utils import restartScript,getPlatform
 
+JAR_FILE_NAME = 'services-0.0.1-SNAPSHOT.jar'
+
 import optparse
 def parser(unparsed_args):
   
@@ -142,7 +144,7 @@ class myMain():
         if self.PRODUCTION:
             java = 'java'
             basePath = 'C:/Users/Mindtrap/Documents'
-        cmd = f'''{java} -Dfile.encoding=UTF-8 -jar {basePath}/Github/agent_factory_services/target/services-0.0.1-SNAPSHOT.jar'''
+        cmd = f'''{java} -Dfile.encoding=UTF-8 -jar {basePath}/Github/agent_factory_services/target/{JAR_FILE_NAME}'''
         return cmd
     
     def linuxService(self):
@@ -150,7 +152,7 @@ class myMain():
         java = '/usr/lib/jvm/java-17-openjdk-amd64/bin/java'
         #java = 'java'
         extraParam = ''
-        cmd = f'''{java} -Dfile.encoding=UTF-8 -DDB_USER=pavlos -DDB_PASSWORD=mindtr@p -jar /home/agentfactory/Documents/Github/agent_factory_services/target/services-0.0.1-SNAPSHOT.jar'''
+        cmd = f'''{java} -Dfile.encoding=UTF-8 -DDB_USER=pavlos -DDB_PASSWORD=mindtr@p -jar /home/agentfactory/Documents/Github/agent_factory_services/target/{JAR_FILE_NAME}'''
         return cmd
 
     def main(self):        
@@ -165,6 +167,7 @@ class myMain():
         self.runSubproccess(cmd)
         self.logger.critical("[-----------------SELF--------------] Java broke completely , restarting again!")
         self.restart()
+
 
 def main(args):
     options = parser(args)
