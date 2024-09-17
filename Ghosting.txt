@@ -1,0 +1,5 @@
+->Για Lenovo και Dells general Use
+Βάζουμε το -> General_Lenovo_Image
+
+->Για Mindgolf Server 
+Βαζουμε το -> Mindgolf_Server_Image

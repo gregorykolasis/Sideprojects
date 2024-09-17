@@ -33,3 +33,10 @@ Scenario -> Fix GPT Image after Ghosting
     1. C:
     2. format C: /fs:fat32
     3. bcdboot  E:/windows /s C: /f UEFI
+	
+Scenario -> Ghost Taken from Partitions on already GPT-Drive
+
+	How to Ghost Upload it 
+		1. C:
+		2. format C: /fs:fat32
+		3. bcdboot  E:/windows /s C: /f UEFI
