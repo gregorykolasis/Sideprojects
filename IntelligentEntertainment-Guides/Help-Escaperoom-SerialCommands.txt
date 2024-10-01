@@ -1,0 +1,10 @@
+13:02:08.975 -> ==================================HELP==============================
+13:02:08.975 -> !Each command should be placed inside the start mark:'@' and end mark '#' Ex:@help#
+13:02:08.975 -> [1]->GAME MODE [Descirption]:[MOST-USED]Put the game in GAME-MODE
+13:02:08.975 -> [2]->TEST MODE [Descirption]:[MOST-USED]Put the game in TEST-MODE
+13:02:08.975 -> [3]->RESTART [Descirption]:[MOST-USED]RESTART MCU
+13:02:08.975 -> [4]->start [Descirption]:[MOST-USED]Starts the game
+13:02:09.022 -> ==================================HELP==============================
+
+@Vivlia# ->Trigger the Riddle Vivlia , you must BE IN TEST MODE or (GAME MODE and the stateGame to be Vivlia)
+For the GAME-Mode you need to press first @start# ->game has started

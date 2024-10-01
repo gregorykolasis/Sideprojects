@@ -1,0 +1,73 @@
+Scenario -> Fix MBR Image to GPT after first time use with Media Bootable USB (Windows NT)
+
+	1. mbr2gpt /convert /disk:0 /allowFullOS
+
+Scenario -> Fix GPT Image after Ghosting
+
+    ****** First Steps
+
+    Insert Windows Bootable USB -> Wait for the Window to appear
+    Language to Install -> English (United States)
+    Time and currency format -> English (United States)
+    Keyboard or input method -> US
+
+    PRESS -> Shift + F10 to Open the Windows Terminal
+
+    ****** First Steps
+
+    1.  bootsect /nt60 sys
+    2.  diskpart
+    3.  list disk
+    4.  select disk 0
+    5.  list volume
+    6.  select vol 1
+    7.  assign letter=n:
+    8.  list volume
+    9.  exit
+    10. n:
+    11. format n: /fs:fat32
+    12. bcdboot c:\windows /s n: /f UEFI
+
+    Or faster way discovered by Dimitris
+
+    1. C:
+    2. format C: /fs:fat32
+    3. bcdboot  E:/windows /s C: /f UEFI
+	
+Scenario -> Ghost Taken from Partitions on already GPT-Drive
+
+	How to Ghost Upload it 
+		1. C:
+		2. format C: /fs:fat32
+		3. bcdboot  E:/windows /s C: /f UEFI
+			
+===========================================DIMITRIS RAW=======================================================
+
+----------Image Creation Dell-------------
+
+Gia na paroume image dialegoume tin epilogi partition tou create image kai otan mas bgalei tin epilogi 
+na diale3oume partitions dialegoume kai ta duo pou einai diathesima με CTRL + Left click
+
+-------------MBR2GPT fix-----------------
+Ystera:
+
+Shift + F10
+
+bootrec /fixmbr (den xreiazetai)
+bootrec /fixboot (den xreiazetai)
+chkdsk C: /R (den xreiazetai)
+
+Step 1. Type diskpart and press Enter key.
+Step 2. Type list disk and press Enter. Now pay attention to the disk number and identify which one is the boot disk. Usually, it is Disk 0; if not, find the disk number in your own case and remember to type the correct one in the following relevant steps.
+Step 3. Type select disk 0 and press Enter.
+Step 4. Type list volume and press Enter. Now pay attention to the volume number of the EFI partition.
+Step 5. Type select volume N and press Enter. Also, type the one in your own case instead of N.
+Step 6. Type assign letter=N: and press Enter. N: can be replaced by any drive letter that is not taken by any partition. Remember which drive letter you assign here for it is rather useful in the rest steps.
+Step 7. Type exit and press Enter to leave diskpart.
+Step 8. Type bootsect /nt60 sys
+Step 9. Now type N: (the drive lettered you just assigned) and hit Enter.
+Step 10. Type format N: /FS:FAT32 and hit Enter.
+Step 11. Type bcdboot C:windows /s N: /f UEFI and hit Enter.
+Step 12. Type bootrec /fixboot  (den xreiazetai)
+
+===========================================DIMITRIS RAW=======================================================

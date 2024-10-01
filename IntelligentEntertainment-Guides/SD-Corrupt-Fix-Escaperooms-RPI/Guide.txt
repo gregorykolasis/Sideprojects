@@ -1,0 +1,25 @@
+	1. Extract all the Files from the OLD Broken SD Card
+		i) Install AccessData_FTK_Imager_4.7.1.exe
+		ii) Open it
+		iii) Mount Physical Device (Search for the USB-Card-Reader :F)
+		iv)  Extract home/pi/Desktop -> All Files
+			 Extract home/pi/Arduino/Libraries -> All Files
+			 Extract /var/www/html -> All Files
+
+	2. Install the IMAGE to the NEW SD Card
+		i) Tell him to put the USB-SD-Card adapter to GM-PC , and put the NEW-SD Card inside
+		ii) Find the SD Card maybe :F , And extract the Anover_IMG_TMT_22_7_2022.rar and get the .bin       ->Anover_IMG_TMT_22_7_2022.rar , GoogleDrive/Mindtrap/IMAGE_LIBS_ANYDESK
+		iii) Open the win32diskimager -> and select the :F , and the IMAGE and press WRITE (15/20 Minutes)
+			 
+	3. Move all the Backupfiles to the NEW-SD
+		Path Arduino Libaries -> /home/pi/Arduino/Libraries
+		Path Webpage          -> /var/www/html
+		Path Python Software  -> /home/pi/Desktop/software or home/pi/Documents/Mindtrap/
+	
+	4. Change the autostart python path
+			i)   cd /home/pi/.config/autostart/
+			ii)  ls
+			iii) sudo nano soft.desktop or sudo nano clock.desktop
+			 -> Exec new Path -> '/home/pi/Desktop/software/server.py'
+			 
+			

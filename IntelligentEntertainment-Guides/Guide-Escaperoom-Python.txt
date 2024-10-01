@@ -1,0 +1,35 @@
+
+=====EscapeRoom-Software (High-Level)=====
+
+	1. Python-Room-Controller (Folder-Structure)
+		(Folder) room			->Every sound file of the EscapeRoom (Changes every time for every EscapeRoom)
+		(File) 	 DraculaDB.db	->Database always different for every EscapeRoom
+		(Folder) libs			->Standard Python Libraries that the Project needs (Never-Change)
+		(File)	 .env			->Configuration File for the Project (Change depending of the Escaperoom)
+		(File)	 server.py		->main run file , to START the Program
+		
+	2. Edit .db (Database)
+	
+		kataskevi 
+			id - order of Riddle ex Id:1 ->Diakoptes (Upside)
+			name - name of riddle //Here-> Riddle Chandelier =  Riddle("Poluelaios");
+			but_name_eng - Appearance name in the Webpage of EscapeRoom in English
+			but_name_ger - Appearance name in the Webpage of EscapeRoom in German
+			room - In which Room it should appear in the Webpage
+			used - 1 (Always 1)
+			
+		game
+			room_time - 60 (Minutes of the Game)
+			game_name - Name of the Game
+			language  - Starting Language of the Game could be (ENG or GER)
+			
+		pos1 , pos2 , pos3  ,pos4 
+			id
+			clue_eng - the Text for the Riddle to be appeared in english
+			clue_ger - the Text for the Riddle to be appeared in german
+			clue_fre - the Text for the Riddle to be appeared in french
+			clue_gre - the Text for the Riddle to be appeared in greek
+			clue_por - the Text for the Riddle to be appeared in portogues
+			
+	3. Edit .env
+		NAME = Upside ->Change the name to the Appropriate

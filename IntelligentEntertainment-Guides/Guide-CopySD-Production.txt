@@ -1,0 +1,19 @@
+=======Rasberry-SD-Copier======
+
+1.  Put the New-SD card inside the USB-SD-Reader
+2.  Press the Rasberry-ICON(Menu) Top-Left
+3.  Go to Accessories
+4.  Press SD Card Copier
+5.  Copy From Device ->(USD /dev/mmcblk0)
+6.  SD Card Reader (/dev/sda) or Something like that
+7.  Press Start
+8.  When you're done , put the New-SD inside as the Main-SD , remove the USB-Card-Reader
+9.  Open the Terminal
+10. Type-> sudo rm /etc/anydesk/service.conf
+11. Press Anydesk Icon top Right
+12. Press -> Set password for Unattended Access
+13. Press -> Unlock Security Settings (Password is :123456)
+14. Go to Unattended Access Tab and check (Enabled unattended access) and Set Password for unattended access
+15. You insert the password 'mindtr@p'
+
+=======Rasberry-SD-Copier======

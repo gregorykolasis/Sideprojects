@@ -1,0 +1,176 @@
+===============EscapeRoom==============
+
+ typedef struct pinouts {
+	uint8_t inp[MAX_INPUTS];  //Digital-Inputs 
+	uint8_t rel[MAX_RELAYS];  //Magnetic-Locks
+	uint8_t pwm[MAX_PWMS];    //Lights
+	uint8_t extr[MAX_EXTR];	  //Controllable-Ledstrips 
+	uint8_t anal[MAX_ANALOG]; //Analog-Readers
+ } pins;
+
+
+το WWled ειναι απλη λεντοταινια
+το GPIO1 ειναι ελεγχομενη ledotainia
+
+ 1. Master-PCB(Πλακέτα)
+ 2. Πολλά Slaves ή Νοdes όσα λεει το Excel
+ 
+	*Slave
+	 i) Έχει 8 ΙOs ή GPIOs ποδαρακια που χρησιμοποιούνται για να διαβάσεις Digital σήματα 0 και 1 όπως 
+		κουμπιά , ή μαγνητικές επαφές. Επίσης αυτα τα ποδαράκια χρησιμοποιούνται για τις ελεγχόμενες
+		ελεντοταινίες ή για RFID-Readers
+		Μέγιστοι RFID-Readers:3
+		Μεγιστες Ελεγχομενες Ledstrips:8
+	 ii) I2C Protocol (Συνδεει τον Slave με διαφορες πλακετιτσες)
+	    MCP -> IO Exapnder
+		Οι MPC-Expander για INPUTS ξεκινανε απο Address 3 έως Address 7
+		Οι MCP-Expander για OUTPUTS ξεκιναν απο Adresss 1 έως Address 2
+		Οταν μπει MCP-Expander για INPUTS 
+		Οταν μπει MCP-Expander(ADDR3) τα INPUTS αναφερονται στον MCP , και οχι στα 8-IOs του Slave
+		
+	 Υπαρχουν διασπαρτα μεσα στους χωρους τους EscapeRoom Hintboxes, με 3 Inputs για AUTOCLUE,CALLGM,PANIC
+	 
+	 *Master 
+	 
+  Τι σημαινει TEST-MODE;
+	Οταν το lockedGame=false , σημαινει το προγραμμα ελεγχει ολους τους Γριφους
+  
+  Τι σημαινει GAME-MODE
+	Oταν το πρόγραμμα ελεγχει εναν Γριφο την φωρα , (Αυτο που παιζουν οι πελατες)
+  
+  Οι γριφοι προγραμματιστικα χωριζονται σε κατηγοριες
+  
+  1. Pattern
+	Οταν υπαρχει συγκεκριμενη σειρα τοποτεθητησης αντικειμενων , η συγκεκριμενη σειρα που πατιουνται κουμπια χρησιμοποιώ PatternClass
+	===Παραδειγμα=====
+	  if ( (lockedGame && stateGame == Chandelier.id) || !lockedGame) {
+		
+		if (ChandelierPattern.check() || Chandelier.multi_tr ) {      
+		  Chandelier.multi_tr=false;  
+		  printSTEP(Chandelier.name);
+		  stateGame=Chandelier.id+1;
+
+		  fastWrite(MAGNMpoufes,LOW,S_MAGNMpoufes.id);
+		}
+		
+	  }	
+	===Παραδειγμα=====
+	
+  2. multiRead (ταυτόχρονα διαβασματα κομματιων , η αντικειμενων μεσα)
+     ===Παραδειγμα=====
+	  if ((lockedGame && stateGame == Skeleton.id) || !lockedGame) {
+		customCoffins();
+		if ( multiReadDiff( (uint8_t*)&SkeletonINPs,(uint8_t*)&Skeleton_SIDs,sizeof(SkeletonINPs),"Skeletos") || Skeleton.multi_tr) {
+		  Skeleton.multi_tr=false;
+		  printSTEP(Skeleton.name);
+		  stateGame=Skeleton.id+1;  
+		  
+		  fastWrite(MAGNTopStick,LOW,S_MAGNTopStick.id);  
+		}
+	  } 
+	===Παραδειγμα=====
+	  
+  
+  3. απλα να μπει 1 Input τύπου Fell ( απο 1(standy) πηγε στο 0 ) πέσιμο
+ 
+	===Παραδειγμα=====
+	  if ((lockedGame && stateGame == Key.id) || !lockedGame) {
+		uint8_t inp = inpBounceObjPos( Key_INP , S_Key_INP.id);
+		if ( S_Key_INP.fell(inp) || Key.multi_tr) {
+		  Key.multi_tr=false;
+		  printSTEP(Key.name);
+		  stateGame=Key.id+1;
+
+		  fastWrite(DOOR_1,LOW,sDOOR_1.id);
+		  THEME(2);
+		}
+	  }
+    ===Παραδειγμα=====
+ 
+  
+  4. custom
+  
+   ===Παραδειγμα=====
+   if ((lockedGame && stateGame == Angel.id) || !lockedGame) {
+      customAngel();
+   }
+	void customAngel() {
+
+	  bool success=false;
+	  bool anyCheck=false;
+
+		  if (!Angel.lock) {
+		  
+			for (uint8_t i=0;i<sizeof(AngelINPs);i++) {
+			  uint8_t id  = Angel_SIDs[i];
+			  uint8_t inp = inpBounceObjPos( AngelINPs[i], id );
+			  if (p[id]->fell(inp)) { 
+				  Serial.print(F("[Angel] Fell"));
+				  Serial.println(i); 
+				if (stateDrakoula[i]) {
+				  fastWrite(AngelWings[i],LOW,AngelWings_SIDs[i]);
+				  stateDrakoula[i] = false;
+				}
+				else {
+				  fastWrite(AngelWings[i],HIGH,AngelWings_SIDs[i]);
+				  stateDrakoula[i] = HIGH;
+				}
+				anyCheck=true;
+			  }   
+		   }
+		   if (anyCheck){
+			  for (uint8_t i=0;i<sizeof(AngelINPs);i++) {
+				if (stateDrakoula[i] != correctDrakoula[i]) {
+				  break;
+				}
+				if ( i == sizeof(AngelINPs) - 1  ) {
+				  success=true;
+				}   
+			  }
+		   }
+
+		   if (Angel.multi_tr || success){
+
+			   Angel.lock=true;
+			   printSTEP(Angel.name);
+			   Angel.multi_tr=false;
+			   stateGame=Angel.id+1;
+		  
+			   for (uint8_t i=0;i<sizeof(AngelWings);i++) {    
+				fastWrite(AngelWings[i],HIGH,AngelWings_SIDs[i]);
+			   }
+			   fastWrite(LaserAngel,HIGH,S_LaserAngel.id);
+			}
+
+		  }
+		 
+		}      
+	}
+    ===Παραδειγμα=====
+
+Αφου φορτωσουμε τον κωδικα στον μαστερ περιμενουμε να φορτωσει τους slaves και μετα τρεχουμε με υην εντολη 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
