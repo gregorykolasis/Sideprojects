@@ -1,0 +1,22 @@
+
+1. Copy past these commands on terminal and hit ENTER
+	sudo apt update
+	sudo apt upgrade chromium-browser
+	
+2. sudo reboot
+
+3. sudo nano /boot/config.txt
+	Enter these lines
+	
+	hdmi_force_hotplug=1      # Forces the HDMI output even if no monitor is detected
+	hdmi_group=2              # Group 2 = DMT (Display Monitor Timings)
+	hdmi_mode=82              # Mode 82 = 1920x1080 @ 60Hz
+	hdmi_drive=2              # HDMI drive for normal HDMI output (not DVI)
+	
+	Ctrl + X , Y , Enter
+
+4. sudo reboot
+
+5. Now you're ready to copy the latest Software ->Mindtrap_Server_PY , and also the latest Mindtrap_Frontend_React
+
+
