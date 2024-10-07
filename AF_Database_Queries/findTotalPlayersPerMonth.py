@@ -1,16 +1,22 @@
 try:
     import pymysql
+    import csv
+    import os
+    import calendar
 except Exception as e:
     import os
     os.system("pip install pymysql")
+    os.system("pip install csv")
+
 from datetime import datetime
 
 # Example of database configuration
+city = 'Dorsten'
 db_config = {
     'host'     : 'localhost',
     'db'       : 'agent_factory',  
-    'user'     : 'python_user',     # root , python_user
-    'password' : 'Mindtr@p123'      #      , Mindtr@p123
+    'user'     : 'root',     # root , python_user
+    'password' : ''      #      , Mindtr@p123
 }
 
 def tryConnection():
@@ -23,6 +29,25 @@ def tryConnection():
         cursorclass=pymysql.cursors.DictCursor  # Optional for dictionary-like results
     )
     return connection
+
+def export_to_csv(data, month, year, count, filename=None):
+    # Convert month number to month name
+    month_name = calendar.month_name[month]
+    # Get the absolute path of the script directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # Default filename if not provided
+    filename = filename or f'{city}_AF_{count}-Players_{month_name}_{year}.csv'
+    filepath = os.path.join(script_dir, filename)
+
+    # Export the data to a CSV file
+    try:
+        with open(filepath, 'w', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=['id', 'name', 'username', 'email'])
+            writer.writeheader()
+            writer.writerows(data)
+        print(f"Data successfully exported to {filepath}")
+    except Exception as e:
+        print(f"Error exporting to CSV: {e}")
 
 def get_players_for_month(db_config, month, year):
     try:
@@ -70,6 +95,13 @@ def get_players_for_month(db_config, month, year):
                         print(f"ID: {row['id']}, Name: {row['name']}, Username: {row['username']}, Email: {row['email']}")
                 else:
                     print("No detailed information will be shown.")
+                
+                # Ask if the user wants to export the results to a CSV file
+                export_to_csv_choice = input("\nDo you want to export the results to a CSV file? (Y/N): ").strip().upper()
+                if export_to_csv_choice == 'Y':
+                    export_to_csv(result, month, year, total_players)
+                else:
+                    print("Results will not be exported to CSV.")
 
     except pymysql.MySQLError as e:
         print(f"Error connecting to MySQL: {e}")
@@ -78,7 +110,6 @@ def get_players_for_month(db_config, month, year):
         if connection and connection.open:
             cursor.close()
             connection.close()
-            #print("MySQL connection closed")
 
 try:
     connection = None
@@ -91,4 +122,4 @@ try:
 except Exception as e:
     print(e)
     while True:
-        x=0
+        pass
