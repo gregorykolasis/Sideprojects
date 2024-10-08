@@ -1,0 +1,11 @@
+C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld.exe --upgrade=FORCE --standalone --console
+
+C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld.exe --initialize-insecure --standalone --console --datadir=C:\laragon\data\mysql-8 
+
+C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld.exe --defaults-file=C:\laragon\bin\mysql\mysql-8.0.30-winx64\my.ini --standalone --console --local-infile --initialize-insecure --datadir=C:\laragon\data\mysql-8
+
+C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqld.exe --defaults-file=C:\laragon\bin\mysql\mysql-8.0.30-winx64\my.ini --standalone --console --local-infile --datadir=C:\laragon\data\mysql-8
+
+mysql -u root -p
+
+C:\laragon\bin\mysql\mysql-5.7.33-winx64\bin\mysqld.exe --defaults-file=C:\laragon\bin\mysql\mysql-8.0.30-winx64\my.ini --standalone --console --local-infile --datadir=C:\laragon\data\mysql

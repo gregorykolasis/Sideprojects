@@ -1,0 +1,16 @@
+Write RFID - Wristbands with ID and Colour (Agent Factory)
+
+3 Leading Zeros then Colour , then ID , ID must be 6 Digit always
+
+000-1000101   ->ID:000101 , Colour:1
+000-2000102   ->ID:000102 , Colour:2
+000-3000103   ->ID:000103 , Colour:3
+000-4000104   ->ID:000104 , Colour:4
+000-5000105   ->ID:000105 , Colour:5
+000-6000106   ->ID:000106 , Colour:6
+
+Write RFID - Wristbands with ID (Mindgolf)
+
+its the same like AgentFactory , but you use always colour : 1
+
+000-1000101   ->ID:000101 , Colour:1
