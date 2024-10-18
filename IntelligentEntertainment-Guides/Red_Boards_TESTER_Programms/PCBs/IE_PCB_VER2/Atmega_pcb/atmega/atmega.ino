@@ -21,18 +21,11 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 Adafruit_MCP23017 mcp1;
 Adafruit_MCP23017 mcp2;
 Adafruit_MCP23017 mcp3;
-Adafruit_MCP23017 mcp4;
-Adafruit_MCP23017 mcp5;
-Adafruit_MCP23017 mcp6;
-Adafruit_MCP23017 mcp7;
 
 #define addr1 0
 #define addr2 4
 #define addr3 2
-#define addr4 1
-#define addr5 5
-#define addr6 6
-#define addr7 7
+
 
 #define in1Pin 40
 #define in2Pin 41
@@ -141,62 +134,9 @@ BounceMcp mcp3in12 = BounceMcp(); // Instantiate a Bounce object
 BounceMcp mcp3in13 = BounceMcp(); // Instantiate a Bounce object
 BounceMcp mcp3in14 = BounceMcp(); // Instantiate a Bounce object
 
-BounceMcp mcp4in1 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp4in2 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp4in3 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp4in4 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp4in5 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp4in6 = BounceMcp(); // Instantiate a Bounce object
 
-BounceMcp mcp5in1 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in2 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in3 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in4 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in5 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in6 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in7 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in8 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in9 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in10 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in11 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in12 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in13 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in14 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in15 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp5in16 = BounceMcp(); // Instantiate a Bounce object
 
-BounceMcp mcp6in1 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in2 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in3 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in4 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in5 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in6 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in7 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in8 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in9 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in10 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in11 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in12 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in13 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in14 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in15 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp6in16 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in1 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in2 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in3 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in4 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in5 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in6 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in7 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in8 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in9 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in10 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in11 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in12 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in13 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in14 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in15 = BounceMcp(); // Instantiate a Bounce object
-BounceMcp mcp7in16 = BounceMcp(); // Instantiate a Bounce object1
+
 void setup() {
  for(int i=0;i<10;i++)
   {
@@ -213,10 +153,7 @@ delay(500);
   mcp1.begin();
   mcp2.begin(addr2); 
   mcp3.begin(addr3);
-  mcp4.begin(addr4);
-  mcp5.begin(addr5);
-  mcp6.begin(addr6);
-  mcp7.begin(addr7);
+  
  for(int i=0;i<14;i++)
  {
   mcp1.pinMode(i,INPUT);
@@ -286,95 +223,6 @@ for(int i=0;i<14;i++)
   mcp3in13.attach(mcp3, 12, 25);
   mcp3in14.attach(mcp3, 13, 25);
 
-for(int i=8;i<14;i++)
-{
-  mcp4.pinMode(i,INPUT);
-  mcp4.pullUp(i,HIGH);
-  
-}
-
-  mcp4in1.attach(mcp4, 8, 25);
-  mcp4in2.attach(mcp4, 9, 25);
-  mcp4in3.attach(mcp4, 10, 25);
-  mcp4in4.attach(mcp4, 11, 25);
-  mcp4in5.attach(mcp4, 12, 25);
-  mcp4in6.attach(mcp4, 13, 25);
-
-
-for(int i=0;i<16;i++)
- {
-  mcp5.pinMode(i,INPUT);
-  mcp5.pullUp(i,HIGH);
-  
- }
-   
-  mcp5in1.attach(mcp5, 0, 25);
-  mcp5in2.attach(mcp5, 1, 25);
-  mcp5in3.attach(mcp5, 2, 25);
-  mcp5in4.attach(mcp5, 3, 25);
-  mcp5in5.attach(mcp5, 4, 25);
-  mcp5in6.attach(mcp5, 5, 25);
-  mcp5in7.attach(mcp5, 6, 25);
-  mcp5in8.attach(mcp5, 7, 25);
-  mcp5in9.attach(mcp5, 8, 25);
-  mcp5in10.attach(mcp5, 9, 25);
-  mcp5in11.attach(mcp5, 10, 25);
-  mcp5in12.attach(mcp5, 11, 25);
-  mcp5in13.attach(mcp5, 12, 25);
-  mcp5in14.attach(mcp5, 13, 25);
-  mcp5in15.attach(mcp5, 14, 25);
-  mcp5in16.attach(mcp5, 15, 25);
-
-for(int i=0;i<16;i++)
- {
-  mcp6.pinMode(i,INPUT);
-  mcp6.pullUp(i,HIGH);
-  
- }
-   
-  mcp6in1.attach(mcp6, 0, 25);
-  mcp6in2.attach(mcp6, 1, 25);
-  mcp6in3.attach(mcp6, 2, 25);
-  mcp6in4.attach(mcp6, 3, 25);
-  mcp6in5.attach(mcp6, 4, 25);
-  mcp6in6.attach(mcp6, 5, 25);
-  mcp6in7.attach(mcp6, 6, 25);
-  mcp6in8.attach(mcp6, 7, 25);
-  mcp6in9.attach(mcp6, 8, 25);
-  mcp6in10.attach(mcp6, 9, 25);
-  mcp6in11.attach(mcp6, 10, 25);
-  mcp6in12.attach(mcp6, 11, 25);
-  mcp6in13.attach(mcp6, 12, 25);
-  mcp6in14.attach(mcp6, 13, 25);
-  mcp6in15.attach(mcp6, 14, 25);
-  mcp6in16.attach(mcp6, 15, 25);
-
-for(int i=0;i<16;i++)
- {
-  mcp7.pinMode(i,INPUT);
-  mcp7.pullUp(i,HIGH);
-  
- }
-   
-  mcp7in1.attach(mcp7, 0, 25);
-  mcp7in2.attach(mcp7, 1, 25);
-  mcp7in3.attach(mcp7, 2, 25);
-  mcp7in4.attach(mcp7, 3, 25);
-  mcp7in5.attach(mcp7, 4, 25);
-  mcp7in6.attach(mcp7, 5, 25);
-  mcp7in7.attach(mcp7, 6, 25);
-  mcp7in8.attach(mcp7, 7, 25);
-  mcp7in9.attach(mcp7, 8, 25);
-  mcp7in10.attach(mcp7, 9, 25);
-  mcp7in11.attach(mcp7, 10, 25);
-  mcp7in12.attach(mcp7, 11, 25);
-  mcp7in13.attach(mcp7, 12, 25);
-  mcp7in14.attach(mcp7, 13, 25);
-  mcp7in15.attach(mcp7, 14, 25);
-  mcp7in16.attach(mcp7, 15, 25);
-
-
-
 
 mcp1.pinMode(14,OUTPUT);
 mcp1.pinMode(15,OUTPUT);
@@ -382,32 +230,15 @@ mcp2.pinMode(14,OUTPUT);
 mcp2.pinMode(15,OUTPUT);
 mcp3.pinMode(14,OUTPUT);
 mcp3.pinMode(15,OUTPUT);
-mcp4.pinMode(0,OUTPUT);
-mcp4.pinMode(1,OUTPUT);
-mcp4.pinMode(2,OUTPUT);
-mcp4.pinMode(3,OUTPUT);
-mcp4.pinMode(4,OUTPUT);
-mcp4.pinMode(5,OUTPUT);
-mcp4.pinMode(6,OUTPUT);
-mcp4.pinMode(7,OUTPUT);
-mcp4.pinMode(14,OUTPUT);
-mcp4.pinMode(15,OUTPUT);
+
 mcp1.digitalWrite(14,HIGH);
 mcp1.digitalWrite(15,HIGH);
 mcp2.digitalWrite(14,HIGH);
 mcp2.digitalWrite(15,HIGH);
 mcp3.digitalWrite(14,HIGH);
 mcp3.digitalWrite(15,HIGH);
-mcp4.digitalWrite(0,HIGH);
-mcp4.digitalWrite(1,HIGH);
-mcp4.digitalWrite(2,HIGH);
-mcp4.digitalWrite(3,HIGH);
-mcp4.digitalWrite(4,HIGH);
-mcp4.digitalWrite(5,HIGH);
-mcp4.digitalWrite(6,HIGH);
-mcp4.digitalWrite(7,HIGH);
-mcp4.digitalWrite(14,HIGH);
-mcp4.digitalWrite(15,HIGH);
+
+
 Serial.begin(9600);
   
  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
@@ -917,293 +748,7 @@ if(mcp3in14.fell())
   printSL("mc3in14");
 }
 
-if(mcp4in1.fell())
-{
-  printSL("mc4in1");
-}
 
-
-if(mcp4in2.fell())
-{
-  printSL("mc4in2");
-}
-
-
-if(mcp4in3.fell())
-{
-  printSL("mc4in3");
-}
-
-
-if(mcp4in4.fell())
-{
-  printSL("mc4in4");
-}
-
-
-if(mcp4in5.fell())
-{
-  printSL("mc4in5");
-}
-
-
-if(mcp4in6.fell())
-{
-  printSL("mc4in6");
-}
-
-
-if(mcp5in1.fell())
-{
-  printSL("mc5in1");
-}
-
-if(mcp5in2.fell())
-{
-  printSL("mc5in2");
-}
-
-if(mcp5in3.fell())
-{
-  printSL("mc5in3");
-}
-
-if(mcp5in4.fell())
-{
-  printSL("mc5in4");
-}
-
-
-if(mcp5in5.fell())
-{
-  printSL("mc5in5");
-}
-
-
-if(mcp5in6.fell())
-{
-  printSL("mc5in6");
-}
-
-
-if(mcp5in7.fell())
-{
-  printSL("mc5in7");
-}
-
-
-if(mcp5in8.fell())
-{
-  printSL("mc5in8");
-}
-
-
-if(mcp5in9.fell())
-{
-  printSL("mc5in9");
-}
-
-if(mcp5in10.fell())
-{
-  printSL("mc5in10");
-}
-
-if(mcp5in11.fell())
-{
-  printSL("mc5in11");
-}
-
-
-if(mcp5in12.fell())
-{
-  printSL("mc5in12");
-}
-
-if(mcp5in13.fell())
-{
-  printSL("mc5in13");
-}
-
-if(mcp5in14.fell())
-{
-  printSL("mc5in14");
-}
-if(mcp5in15.fell())
-{
-  printSL("mc5in15");
-}
-if(mcp5in16.fell())
-{
-  printSL("mc5in16");
-}
-
-if(mcp6in1.fell())
-{
-  printSL("mc6in1");
-}
-
-if(mcp6in2.fell())
-{
-  printSL("mc6in2");
-}
-
-if(mcp6in3.fell())
-{
-  printSL("mc6in3");
-}
-
-if(mcp6in4.fell())
-{
-  printSL("mc6in4");
-}
-
-
-if(mcp6in5.fell())
-{
-  printSL("mc6in5");
-}
-
-
-if(mcp6in6.fell())
-{
-  printSL("mc6in6");
-}
-
-
-if(mcp6in7.fell())
-{
-  printSL("mc6in7");
-}
-
-
-if(mcp6in8.fell())
-{
-  printSL("mc6in8");
-}
-
-
-if(mcp6in9.fell())
-{
-  printSL("mc6in9");
-}
-
-if(mcp6in10.fell())
-{
-  printSL("mc6in10");
-}
-
-if(mcp6in11.fell())
-{
-  printSL("mc6in11");
-}
-
-
-if(mcp6in12.fell())
-{
-  printSL("mc6in12");
-}
-
-if(mcp6in13.fell())
-{
-  printSL("mc6in13");
-}
-
-if(mcp6in14.fell())
-{
-  printSL("mc6in14");
-}
-if(mcp6in15.fell())
-{
-  printSL("mc6in15");
-}
-if(mcp6in16.fell())
-{
-  printSL("mc6in16");
-}
-
-if(mcp7in1.fell())
-{
-  printSL("mc7in1");
-}
-
-if(mcp7in2.fell())
-{
-  printSL("mc7in2");
-}
-
-if(mcp7in3.fell())
-{
-  printSL("mc7in3");
-}
-
-if(mcp7in4.fell())
-{
-  printSL("mc7in4");
-}
-
-
-if(mcp7in5.fell())
-{
-  printSL("mc7in5");
-}
-
-
-if(mcp7in6.fell())
-{
-  printSL("mc7in6");
-}
-
-
-if(mcp7in7.fell())
-{
-  printSL("mc7in7");
-}
-
-
-if(mcp7in8.fell())
-{
-  printSL("mc7in8");
-}
-
-
-if(mcp7in9.fell())
-{
-  printSL("mc7in9");
-}
-
-if(mcp7in10.fell())
-{
-  printSL("mc7in10");
-}
-
-if(mcp7in11.fell())
-{
-  printSL("mc7in11");
-}
-
-
-if(mcp7in12.fell())
-{
-  printSL("mc7in12");
-}
-
-if(mcp7in13.fell())
-{
-  printSL("mc7in13");
-}
-
-if(mcp7in14.fell())
-{
-  printSL("mc7in14");
-}
-if(mcp7in15.fell())
-{
-  printSL("mc7in15");
-}
-if(mcp7in16.fell())
-{
-  printSL("mc7in16");
-}
 
 
 

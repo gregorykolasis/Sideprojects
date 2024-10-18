@@ -20,8 +20,11 @@ Adafruit_MCP23017 mcp;
 #define BUTTON_PIN2 A1 //IN2
 #define BUTTON_PIN3 A2 //IN3
 #define BUTTON_PIN4 A3 //IN4
-#define BUTTON_PIN5 A6 //IN4
-#define BUTTON_PIN6 A7 //IN4
+
+#define BUTTON_PIN5 A6 //RANDOM PIN
+#define BUTTON_PIN6 A7 //RANDOM PIN
+
+
 #define BUTTON_PIN7 6 //IN6
 #define BUTTON_PIN8 7 //IN7
 #define BUTTON_PIN9 8 //IN8

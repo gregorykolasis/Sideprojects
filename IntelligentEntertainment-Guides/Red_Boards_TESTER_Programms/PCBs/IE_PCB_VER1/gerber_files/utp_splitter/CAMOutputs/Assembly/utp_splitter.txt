@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/zagko/OneDrive/Έγγραφα/EAGLE/projects/atmega_escape_room/utp_splitter.sch at 11/9/2020 2:09 μμ
+
+Qty Value     Device              Package             Parts                                                      Description                                          MF MPN OC_FARNELL OC_NEWARK POPULARITY SPICEPREFIX
+1             LED-5MM-KIT-NO-SILK LED_5MM-KIT-NO-SILK D1                                                         LED (Generic)                                                                                          
+6             SW_DIP-6            EDG-06              SW1, SW2, SW3, SW4, SW5, SW6                               DIP SWITCH                                                                       0                     
+1   220       R-EU_0207/10        0207/10             R1                                                         RESISTOR, European symbol                                                        81         R          
+7   GLX-S-88M GLX-S-88M           GLX-S-88M           INPUT1, INPUT2, INPUT3, INPUT4, INPUT5, INPUT6, INPUT_RJ45 Mod. Jack, Right Angle, 8 posiotion, 8 contatcs RJ45        unknown    unknown   3                     
