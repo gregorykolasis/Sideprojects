@@ -1,0 +1,15 @@
+[Unit]
+Description=mindtrap
+After=syslog.target
+After=mysql.service
+
+
+[Service]
+WorkingDirectory=/home/ag3ntf4ctory/mindtrap
+User=ag3ntf4ctory
+ExecStart=/usr/bin/java -Xmx256m -jar -Dspring.profiles.active=prodbru /home/ag3ntf4ctory/mindtrap/theMaze.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+

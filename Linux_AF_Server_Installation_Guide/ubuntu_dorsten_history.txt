@@ -1,0 +1,357 @@
+    1  sudo nano /etc/gdm3/custom.conf
+    2  sudo reboot
+    3  snap install mqtt-explorer
+    4  mqtt-explorer
+    5  SUDO REBOOT
+    6  sudo reboot
+    7  sudo enable anydesk.service
+    8  sudo systemctl enable anydesk.service
+    9  sudo reboot
+   10  sudo nano /etc/X11/xorg.conf
+   11  sudo apt-get install xserver-xorg-video-dummy
+   12  sdo reboot
+   13  sudo re boot
+   14  sudo reboot
+   15  sudo nano /usr/share/X11/xorg.conf.d/xorg.conf
+   16  sudo reboot
+   17  sudo nano /usr/share/X11/xorg.conf.d/xorg.conf
+   18  sudo reboot
+   19  sudo nano /usr/share/X11/xorg.conf.d/xorg.conf
+   20  sudo reboot
+   21  cd /etc/mosquitto
+   22  ls
+   23  sudo apt-get install mosquitto=2.0.15
+   24  sudo apt-get install mosquitto=2.0.10
+   25  sudo apt-get install mosquitto
+   26  sudo systemctl status mosquitto.service
+   27  sudo mosquitto_passwd -c /etc/mosquitto/passwd pavlos
+   28  cd /etc/mosquitto/conf.d
+   29  sudo nano default.conf
+   30  sudo systemctl stop mosquitto.service
+   31  sudo systemctl start mosquitto.service
+   32  sudo systemctl status mosquitto.service
+   33  cd /etc/mosquitto/conf.d
+   34  sudo nano default.conf
+   35  cd /etc/mosquitto/conf.d
+   36  sudo nano default.conf
+   37  sudo systemctl status mosquitto.service
+   38  sudo systemctl start mosquitto.service
+   39  sudo systemctl status mosquitto.service
+   40  journalctl -f -n 500 mosquitto.service
+   41  journalctl mosquitto.service -f -n 500 
+   42  journalctl -u mosquitto.service -f -n 500
+   43  sudo apt install mysql-server
+   44  sudo mysql -u root -p
+   45  sudo systemctl status mysql-server
+   46  sudo systemctl status mysql-service
+   47  sudo service mysql status
+   48  journalctl -u mysql -f -n 500
+   49  sudo mysql_secure_installation
+   50  mysql -u linuxconfig
+   51  mysql -u root
+   52  mysql -u root -p
+   53  sudo mysql_secure_installation
+   54  mysql -u root -p
+   55  sudo systemctl stop mysql
+   56  sudo mysqld_safe --skip-grant-tables &
+   57  mysql -u root
+   58  sudo mkdir -p /var/run/mysqld
+   59  sudo mysqld_safe --skip-grant-tables &
+   60  mysql -u root
+   61  sudo systemctl status mysql
+   62  sudo systemctl start mysql
+   63  mysql -u root
+   64  mysql -u root -p
+   65  sudo mysqld_safe --skip-grant-tables &
+   66  sudo systemctl stop mysql
+   67  sudo mysqld_safe --skip-grant-tables &
+   68  sudo mkdir -p /var/run/mysqld
+   69  sudo chown mysql:mysql /var/run/mysqld
+   70  sudo mkdir -p /var/run/mysqld
+   71  sudo mysqld_safe --skip-grant-tables &
+   72  mysql -u root
+   73  sudo mysqld_safe --skip-grant-tables &
+   74  mysql -u root
+   75  sudo mysqld_safe --skip-grant-tables &
+   76  mysql -u root
+   77  sudo mysqld_safe --skip-grant-tables &
+   78  mysql -u root
+   79  SHOW PLUGINS;
+   80  sudo mysqld_safe --skip-grant-tables &
+   81  SHOW PLUGINS;
+   82  mysql -u root
+   83  sudo start mysql
+   84  systemctl start mysql
+   85  mysql -u root
+   86  sudo systemctl start mysql
+   87  sudo systemctl restart mysql
+   88  sudo systemctl stop mysql
+   89  sudo systemctl status mysql
+   90  sudo system daemon reload
+   91  sudo daemon reload
+   92  daemo reload
+   93  sudo /etc/init.d/mysql stop
+   94  udo mysqld_safe --skip-grant-tables &
+   95  sudo mysqld_safe --skip-grant-tables &
+   96  mysql -u root
+   97  sudo mysqld_safe --skip-grant-tables &
+   98  mysql -u root -p
+   99  sudo mysqld_safe --skip-grant-tables &
+  100  mysql -u root -p
+  101  sudo mysqld_safe --skip-grant-tables &
+  102  mysql -u root -p
+  103  sudo mysqld_safe --skip-grant-tables &
+  104  mysql -u root
+  105  sudo systemctl start mysql
+  106  sudo reboot
+  107  chmod +x ./*.AppImage
+  108  cs ~
+  109  cd ~
+  110  ls
+  111  cd Downloads
+  112  chmod +x ./*.AppImage
+  113  sudo chmod +x ./*.AppImage
+  114  ./MeowSQL.AppImage 
+  115  sudo apt-get install fuse libfuse2
+  116  ./MeowSQL.AppImage 
+  117  sudo service mysql stop
+  118  sudo nano /etc/mysql/mysql.conf.d/reset-mysql-password.cnf
+  119  sudo mysqld_safe --skip-grant-tables &
+  120  mysql -u root
+  121  sudo service mysql start
+  122  sudo mysqld_safe --skip-grant-tables &
+  123  mysql -u root
+  124  cd /etc/mysql
+  125  ls
+  126  sudo nano my.cnf
+  127  sudo nano mysql.cnf
+  128  cd mysql.conf.d
+  129  ls
+  130  nano reset-mysql-password.cnf 
+  131  rm reset-m
+  132  rm reset-mysql-password.cnf 
+  133  sudo rm reset-mysql-password.cnf 
+  134  ls
+  135  nano mysqld.cnf
+  136  sudo nano mysqld.cnf
+  137  sudo service mysql start
+  138  mysql -u root
+  139  sudo systemctl status mysql
+  140  mysql -u root -p
+  141  sudo mkdir -p /var/run/mysqld; sudo chown mysql /var/run/mysqld
+  142  sudo /etc/init.d/mysql stop
+  143  sudo mysqld_safe --skip-grant-tables &
+  144  mysql -uroot
+  145  sudo mkdir -p /var/run/mysqld; sudo chown mysql /var/run/mysqld
+  146  mkdir -p /var/run/mysqld && chown mysql:mysql /var/run/mysqld  
+  147  sudo mkdir -p /var/run/mysqld && chown mysql:mysql /var/run/mysqld  
+  148  sudo mkdir -p /var/run/mysqld && sudo chown mysql:mysql /var/run/mysqld  
+  149  sudo mysqld_safe --skip-grant-tables &
+  150  mysql -uroot
+  151  cd ~
+  152  mysql -u root -p
+  153  mysql -u root
+  154  mysql -u root -p
+  155  cd Documents/
+  156  touch agent_factory.nginx.conf 
+  157  mv agent_factory.nginx.conf /etc/nginx/conf.d/agent_factory_nginx.conf
+  158  sudo mv agent_factory.nginx.conf /etc/nginx/conf.d/agent_factory_nginx.conf
+  159  sudo apt install gnome-tweak-tool
+  160  sudo apt install openjdk-17-jdk
+  161  java --version
+  162  hostname
+  163  sudo apt-get install nginx
+  164  systemctl nginx.service
+  165  systemctl status nginx.service
+  166  systemctl stop nginx.service
+  167  systemctl start nginx.service
+  168  journalctl -u nginx.service -f -n 500
+  169  sudo reboot
+  170  ls
+  171  journalctl -u nginx.service -f -n 500
+  172  systemctl stop nginx.service 
+  173  sudo nano /etc/nginx/nginx.conf 
+  174  systemctl start nginx.service 
+  175  journalctl -u nginx.service -f -n 500
+  176  sudo nano /etc/nginx/nginx.conf 
+  177  journalctl -u nginx.service -f -n 500
+  178  systemctl start nginx.service 
+  179  journalctl -u nginx.service -f -n 500
+  180  java --version
+  181  sudo reboot
+  182  java --version
+  183  mosquitto --version
+  184  sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+  185  sudo apt-get update
+  186  sudo apt-get mosquitto
+  187  sudo apt-get install mosquitto
+  188  mosquitto --version
+  189  cat /etc/hostname
+  190  sudo nano /etc/hosts
+  191  hostnamectl set-hostname afserver
+  192  hostname
+  193  sudo apt-get install avahi-daemon
+  194  sudo systemctl status  avahi-daemon
+  195  journalctl -u avahi-daemon -f -n 500
+  196  sudo apt install gnome-shell-extension-desktop-icons
+  197  sudo chmod -R g+w /var/www/html
+  198  sudo rm Installation/
+  199  sudo rm Installation
+  200  sudo rmdir Installation/
+  201  sudo rmdir Installation
+  202  sudo rm -r Installation
+  203  sudo cp -r /home/agentfactory/Desktop/Installation/* /var/www/html/
+  204  sudo reboot
+  205  sudo chown -R agentfactory@afserver *
+  206  sudo chown -R agentfactory *
+  207  sudo rm index.nginx-debian.html 
+  208  sudo cp /home/agentfactory/Documents/Installation /var/www/html/
+  209  sudo cp /home/agentfactory/Desktop/Installation /var/www/html/
+  210  sudo cp /home/agentfactory/Desktop/Installation/ /var/www/html/
+  211  sudo cp -r /home/agentfactory/Desktop/Installation/ /var/www/html/
+  212  sudo cp -r /home/agentfactory/Desktop/Installation /var/www/html/
+  213  sudo chown -R "root" /var/www/html
+  214  cd ~
+  215  cd ./config/autostart
+  216  mkdir ./config/autostart
+  217  mkdir ./config
+  218  cd ./config
+  219  mkdir autostart
+  220  cd autostart/
+  221  sudo nano app.desktop
+  222  python --version
+  223  sudo apt install python3===3.9.2
+  224  sudo apt install python3==3.9.2
+  225  sudo apt install python==3.9.2
+  226  sudo apt install python3.9.2
+  227  sudo apt install python3.9
+  228  sudo apt install python3
+  229  python3 --version
+  230  sudo nano app.desktop
+  231  mkdir /home/agentfactory/.config/autostart
+  232  sudo nano /home/agentfactory/.confi/autostart/app.desktop
+  233  sudo nano /home/agentfactory/.config/autostart/app.desktop
+  234  sudo rm -r /home/agentfactory/config
+  235  sudo nano /home/agentfactory/.config/autostart/app.desktop
+  236  sudo nano /home/agentfactory/script.py
+  237  python3 /home/agentfactory/script.py
+  238  sudo reboot
+  239  /bin/python3 /home/agentfactory/Documents/Backend_Loader/main.py
+  240  where services-0.0.1-SNAPSHOT.jar
+  241  find ~/ -type f -name "services-0.0.1-SNAPSHOT.jar"
+  242  java -Dfile.encoding=UTF-8 -jar /home/agentfactory/Documents/Github/agent_factory_services/target/services-0.0.1-SNAPSHOT.jar --debug
+  243  /bin/python3 /home/agentfactory/Documents/Backend_Loader/main.py
+  244  whereis java
+  245  cd /usb/bin/java
+  246  cd /usr/bin/java
+  247  cd /usr/bin
+  248  ls
+  249  cd java
+  250  whereis java
+  251  cd /usr/share/man/man1
+  252  ls
+  253  /bin/python3 /home/agentfactory/Documents/Backend_Loader/main.py
+  254  update-alternatives --list java
+  255  /usr/lib/jvm/java-17-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -jar /home/agentfactory/Documents/Github/agent_factory_services/target/services-0.0.1-SNAPSHOT.jar --debug
+  256  systemctl status mysql
+  257  java -Dfile.encoding=UTF-8 -DJDBC_URL=jdbc:mysql://localhost:3306/agent_factory?allowPublicKeyRetrieval=true&useSSL=false -DDB_USER=root -DDB_PASSWORD=mindtr@p -jar /home/agentfactory/Documents/Github/agent_factory_services/target/services-0.0.1-SNAPSHOT.jar
+  258  java -Dfile.encoding=UTF-8 -DJDBC_URL=jdbc:mysql://localhost:3306/agent_factory -DDB_USER=root -DDB_PASSWORD=mindtr@p -jar /home/agentfactory/Documents/Github/agent_factory_services/target/services-0.0.1-SNAPSHOT.jar
+  259  mysql -u root -p
+  260  cd /etc/mysql
+  261  ls
+  262  sudo nano mysql.cnf
+  263  sudo nano mysql.conf.d
+  264  sudo nano conf.d
+  265  cd conf.d
+  266  ls
+  267  sudo nano mysql
+  268  sudo nano mysql.cnf
+  269  nano mysql.conf.d
+  270  ls
+  271  cd ../
+  272  ls
+  273  nano mysql.conf.d
+  274  nano mysql.conf
+  275  nano mysql.conf.d
+  276  nano mysql.cnf
+  277  nano my.cnf
+  278  cd mysql.conf.d
+  279  ls
+  280  nano mysqld.cnf
+  281  sudo nano mysqld.cnf
+  282  system stop mysql
+  283  systemctl stop mysql
+  284  systemctl start mysql
+  285  mysql -u root -p
+  286  mysql -u pavlos -p
+  287  mysql -u root -p
+  288  mysql -u pavlos -p
+  289  systemctl restart mysql
+  290  mysql -u pavlos -p
+  291  history
+  292  mysql -u root -p
+  293  mysql -u pavlos -p
+  294  /bin/python3 /home/agentfactory/Documents/Backend_Loader/main.py
+  295  python3 main.p
+  296  python3 main.py
+  297  sudo nano /home/agentfactory/.config/autostart/app.desktop
+  298  sudo reboot
+  299  sudo nano /home/agentfactory/.config/autostart/app.desktop
+  300  sudo reboot
+  301  /bin/python3 /home/agentfactory/Documents/Backend_Loader/main.py
+  302  sudo reboot
+  303  ssh --help
+  304  sudo apt install openssh-server
+  305  systemctl status openssh
+  306  systemctl status openssh-server
+  307  ssh
+  308  sudo systemctl status sshd.service
+  309  journalctl -u ssh.service -f -n 500
+  310  ipconfig
+  311  sudo nano /etc/dhcpcd.conf
+  312  ifconfig
+  313  ip
+  314  ifconfig
+  315  sudo apt install net-tools
+  316  iiiiifconfig
+  317  ifconfig
+  318  cd /etc/mosquitto
+  319  ls
+  320  cd conf.d
+  321  ls
+  322  nano default.conf 
+  323  sudo nano default.conf 
+  324  sudo systemctl restart mosquitto
+  325  sudo nano default.conf 
+  326  sudo systemctl restart mosquitto
+  327  python3 main.py
+  328  python main.py
+  329  python3 main.py
+  330  ps aux | greg -I JAVA
+  331  ps aux | greP -I JAVA
+  332  ps aux | grep -I JAVA
+  333  kill -9 7165
+  334  ps aux | grep -I java
+  335  kill -9 6803
+  336  kill -9 6804
+  337  kill -9 6930
+  338  kill -9 6931
+  339  kill -9 7026
+  340  kill -9 7027
+  341  kill -9 7167
+  342  ps aux | grep -I java
+  343  kill -9 7169
+  344  python3 main.py
+  345  ps aux | grep -I java
+  346  killall -9 java
+  347  ps aux | grep -I java
+  348  /usr/bin/gnome-control-center
+  349  unity-control-center
+  350  sudo apt install gnome-control-center
+  351  sudo reboot
+  352  sudo timedatectl set-timezone Europe/Athens --adjust-system-clock
+  353  python3 main.py
+  354  history
+  355  python3 main.py
+  356  sudo reboot
+  357  history > ubuntu_dorsten_history.txt

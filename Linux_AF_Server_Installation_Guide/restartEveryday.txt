@@ -1,0 +1,7 @@
+sudo crontab -e
+
+Instert this Line ->
+	05 05   *   *   *    /sbin/shutdown -r +5
+Ctrl + X , Y + ENTER
+
+sudo systemctl enable cron.service

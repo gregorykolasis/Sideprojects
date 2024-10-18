@@ -1,0 +1,870 @@
+    1  sudo apt install anydesk
+    2  sudo apt --install anydesk
+    3  sudo apt install anydesk
+    4  sudo apt update~
+    5  sudo apt update
+    6  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+    7  echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+    8  sudo apt update
+    9  sudo apt install anydesk
+   10  ls
+   11  cd /etc/gdm3
+   12  ls
+   13  nano custom.conf
+   14  sudo systemctl restart anydesk
+   15  echo $XDG_SESSION_TYPE
+   16  sudo apt install openssh-server
+   17  sudo ufw allow ssh
+   18  sudo apt remove anydesk
+   19  sudo apt update
+   20  sudo apt install anydesk
+   21  sudo apt remove anydesk
+   22  sudo apt update
+   23  sudo apt -y upgrade
+   24  curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
+   25  curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sud gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
+   26  curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudogpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
+   27  curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
+   28  echo "deb https://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+   29  echo "deb https://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list index of /
+   30  index of /
+   31  Index of /
+   32  echo "deb https://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list Index of /
+   33  sudo apt install anydesk
+   34  sudo reboot
+   35  sudo systemctl restart mindtrap.service 
+   36  sudo apt update
+   37  sudo apt upgrade
+   38  sudo apt update
+   39  ping www.google.gr
+   40  sudo apt install mysql-server
+   41  sudo mysql -u root -p
+   42  mysql -u pavlos -p
+   43  sudo apt-get install mosquitoo
+   44  sudo apt-get install mosquitto
+   45  sudo mosquitto_passwd -c /etc/mosquitto/passwd pavlos
+   46  cd /etc/mosquitto/conf.d
+   47  sudo vim default.conf
+   48  sudo apt install vim
+   49  sudo vim default.conf
+   50  sudo systemctl start mosquitto.service
+   51  sudo systemctl status mosquitto.service
+   52  journalctl -u mosquitto.service -f -n 500
+   53  cd /etc/systemd/system
+   54  sudo vim mindtrap.service
+   55  sudo apt install nginx
+   56  sudo vim /etc/nginx/sites-available/default
+   57  sudo systemctl restart nginx
+   58  sudo vim /etc/nginx/sites-available/default
+   59  sudo systemctl restart nginx
+   60  sudo systemctl restart mindtrap.service 
+   61  sudo apt install openjdk-11-jdk
+   63  sudo systemctl restart mindtrap.service 
+   64  journalctl -u mindtrap.service -f -n 500
+   65  sudo systemctl restart mindtrap.service 
+   66  sudo systemctl restart mosquitto.service
+   67  sudo systemctl restart mindtrap.service 
+   68  sudo systemctl start mindtrap.service 
+   69  journalctl -u mindtrap.service -f -n 500
+   70  sudo systemctl start mindtrap.service 
+   71  journalctl -u mindtrap.service -f -n 500
+   72  sudo systemctl restart mindtrap.service 
+   73  sudo systemctl start mindtrap.service
+   74  sudo systemctl restart mosquitto.service
+   75  cd mindtrap/
+   76  ls
+   77  rm -rf theMaze.jar 
+   78  ls
+   79  cd /etc/mosquitto/conf.d
+   80  ls
+   81  cat default.conf 
+   82  mosquitto -v
+   83  sudo systemctl status mosquitto.service 
+   84  sudo ufw disable
+   85  ipconfig
+   86  ifconfig
+   87  cd /var/www
+   88  ls
+   89  cd html/
+   90  ls
+   91  cd ~
+   92  cd mindtrap/
+   93  ls
+   94  mkdir build
+   95  cp -r build/* /var/www/html
+   96  sudo cp -r build/* /var/www/html
+   97  sudo systemctl restart nginx.service 
+   98  sudo systemctl status mosquitto.service 
+   99  cd /etc/mosquitto/
+  100  ls
+  101  cd conf.d/
+  102  ls
+  103  cat default.conf 
+  104  sudo systemctl restart mosquitto.service 
+  105  journalctl -u mindtrap.service -f -n 500
+  106  sudo systemctl restart mindtrap.service 
+  107  journalctl -u mindtrap.service -f -n 500
+  108  sudo systemctl restart mindtrap.service 
+  109  journalctl -u mindtrap.service -f -n 500
+  110  sudo systemctl STOP mindtrap.service 
+  111  sudo systemctl stop mindtrap.service 
+  112  sudo systemctl start mindtrap.service 
+  113  journalctl -u mindtrap.service -f -n 500
+  114  sudo systemctl start mindtrap.service 
+  115  journalctl -u mindtrap.service -f -n 500
+  116  sudo systemctl start mindtrap.service 
+  117  journalctl -u mindtrap.service -f -n 500
+  118  sudo systemctl start mindtrap.service 
+  119  journalctl -u mindtrap.service -f -n 500
+  120  sudo systemctl start mindtrap.service 
+  121  journalctl -u mindtrap.service -f -n 500
+  122  sudo systemctl start mindtrap.service 
+  123  journalctl -u mindtrap.service -f -n 500
+  124  sudo systemctl start mindtrap.service 
+  125  journalctl -u mindtrap.service -f -n 500
+  126  sudo systemctl stop mindtrap.service
+  127  sudo systemctl start mindtrap.service 
+  128  journalctl -u mindtrap.service -f -n 500
+  129  cd /etc/mosquitto/conf.d/
+  130  vim default.conf 
+  131  sudo vim default.conf 
+  132  sudo systemctl restart mosquitto.service 
+  133  sudo systemctl stop mosquitto.service 
+  134  sudo systemctl start mosquitto.service 
+  135  cd /etc/mosquitto/conf.d/
+  136  sudo vim default.conf 
+  137  sudo systemctl start mosquitto.service 
+  138  journalctl -xeu mosquitto.service
+  139  mosquitto -version
+  140  sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+  141  sudo apt-get update
+  142  mosquitto -version
+  143  sudo apt-get purge --remove mosquitto*
+  144  sudo apt-get install mosquitto
+  145  mosquitto -version
+  146  sudo systemctl start mosquitto.service
+  147  sudo systemctl status mosquitto.service
+  148  sudo systemctl start mindtrap.service
+  149  journalctl -u mindtrap.service -f -n 500
+  150  sudo systemctl stop mindtrap.service
+  151  sudo systemctl start mindtrap.service
+  152  journalctl -u mindtrap.service -f -n 500
+  153  sudo systemctl restart mindtrap.service
+  154  journalctl -u mindtrap.service -f -n 500
+  155  sudo systemctl restart mindtrap.service
+  156  journalctl -u mindtrap.service -f -n 500
+  157  sudo systemctl restart mindtrap.service
+  158  journalctl -u mindtrap.service -f -n 500
+  159  cd /etc/mosquitto/conf.d/
+  160  vim default.conf 
+  161  sudo vim default.conf 
+  162  sudo systemctl stop mosquitto.service 
+  163  sudo apt-get purge --remove mosquitto*
+  164  sudo apt-get install mosquitto=2.0.10
+  165  sudo apt-get install mosquitto=2.0.10-0mosquitto2~xenial
+  166  sudo apt-get install mosquitto=2.0.10-0mosquitto2~xenial1
+  167  sudo apt-get install 2.0.10-0mosquitto2~xenial1
+  168  sudo apt-get install mosquitto2.0.10-0mosquitto2~xenial1
+  169  sudo apt-get install mosquitto=2.0.10-0mosquitto2~xenial1
+  170  lsb_release -a
+  171  sudo apt-get install mosquitto=2.0.10-0
+  172  sudo apt-get install mosquitto=2.0.10
+  173  docker run -it -d -p 1883:1883 -p 9001:9001 -v /etc/mosquitto/conf.d/default.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2.0.10
+  174  sudo snap install docker
+  175  docker run -it -d -p 1883:1883 -p 9001:9001 -v /etc/mosquitto/conf.d/default.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2.0.10
+  176  cat default.conf 
+  177  allow_anonymous false
+  178  password_file /etc/mosquitto/passwd
+  179  listener 1883
+  180  protocol mqtt
+  181  listener 9001
+  182  protocol websockets'
+  183  cd ~
+  184  cd mindtrap/
+  185  vim mosquitto.conf
+  186  docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2.0.10
+  187  sudo docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2.0.10
+  188  docker ls
+  189  docker list
+  190  docker container ls
+  191  sudo docker containers
+  192  sudo docker container ls
+  193  sudo docker images
+  194  sudo docker ps
+  195  sudo docker ps -all
+  196  sudo vim mosquitto.conf 
+  197  sudo docker start thirsty_kirch
+  198  sudo docker ps -all
+  199  docker exec -it thirsty_kirch sh
+  200  sudo docker exec -it thirsty_kirch sh
+  201  sudo vim mosquitto.conf 
+  202  sudo docker start thirsty_kirch
+  203  sudo docker ps -all
+  204  sudo docker exec -it thirsty_kirch sh
+  205  sudo docker start thirsty_kirch
+  206  sudo docker ps -all
+  207  sudo docker stop thirsty_kirch
+  208  sudo docker start thirsty_kirch
+  209  sudo docker ps -all
+  210  journalctl -u mindtrap.service -f -n 500
+  211  cd mindtrap/
+  212  ls
+  213  cat mosquitto.conf 
+  214  journalctl -u mindtrap.service -f -n 5000
+  215  journalctl -u mindtrap.service -f -n 500
+  216  sudo systemctl start mindtrap.service 
+  217  journalctl -u mindtrap.service -f -n 500
+  218  sudo dockers ps -a
+  219  sudo docker ps -a
+  220  sudo systemctl restart mindtrap.service
+  221  sudo systemctl status mindtrap.service
+  222  journalctl -u mindtrap.service -f -n 500
+  223  sudo systemctl restart mindtrap.service
+  224  sudo systemctl status mindtrap.service
+  225  sudo docker ps -all
+  226  sudo docker start thirsty_kirchsudo
+  227  sudo docker ps -all
+  228  sudo systemctl restart mindtrap.service
+  229  sudo systemctl status mindtrap.service
+  230  sudo systemctl status mosquitto.service
+  231  sudo systemctl status mindtrap.service
+  232  ls
+  233  sudo systemctl enable mindtrap.service 
+  234  cd /etc/systemd/system/
+  235  ls
+  236  sudo vim mindtrap.service 
+  237  sudo docker ps -a
+  238  systemctl list-units --type=service
+  239  sudo systemctll status mindtrap.service
+  240  sudo systemctl status mindtrap.service
+  241  ls
+  242  sudo systemctl status mysql.service 
+  243  sudo systemctl status nginx.service 
+  244  journalctl -u mindtrap.service -f -n 500
+  245  sudo systemctl restart mindtrap.service 
+  246  systemctl deamon-reload
+  247  systemctl daemon-reload
+  248  sduo systemctl daemon-reload
+  249  sudo systemctl daemon-reload
+  250  sudo systemctl restart mindtrap.service 
+  251  journalctl -u mindtrap.service -f -n 500
+  252  cd mindtrap/
+  253  ls
+  254  cd build/
+  255  ls
+  256  cd ..
+  257  ls
+  258  rm -rf build/
+  259  ls
+  260  cd build/
+  261  ls
+  262  sudo cp -r build/* /var/www/html
+  263  cd ..
+  264  sudo cp -r build/* /var/www/html
+  265  ifoncfig
+  266  ifconfig
+  267  ipconfig
+  268  net addr
+  269  ip addr
+  270  sudo cp -r build/* /var/www/html
+  271  ifconfig
+  272  ip addr
+  273  192.168.178.64
+  274  sudo cp -r build/* /var/www/html
+  275  cd mindtrap/
+  276  sudo cp -r build/* /var/www/html
+  277  sudo docker status thristy_kirchsudo
+  278  sudo docker start thristy_kirchsudo
+  279  sudo systemctl status mindtrap.service 
+  280  journalctl -u mindtrap.service -f -n 500
+  281  sudo docker ps -a
+  282  journalctl -u mindtrap.service -f -n 500
+  283  docker ps -a
+  284  sudo docker ps -a
+  285  docker logs 485ee71bb0f0
+  286  sudo docker logs 485ee71bb0f0
+  287  journalctl -u mindtrap.service -f -n 500
+  288  sudo systemctl status mindtrap.service 
+  289  journalctl -u mindtrap.service -f -n 500
+  290  sudo systemctl status mindtrap.service 
+  291  journalctl -u mindtrap.service -f -n 500
+  292  ps -a
+  293  sudo docker ps -aux
+  294  sudo docker ps -a
+  295  sudo docker logs 485ee71bb0f0
+  296  sudo docker logs 485ee71bb0f0 | grep zhPfR5I6sq
+  297  sudo systemctl restart mindtrap.service 
+  298  journalctl -u mindtrap.service -f -n 500
+  299  sudo systemctl restart mindtrap.service 
+  300  sudo systemctl status mindtrap.service 
+  301  sudo docker ps -a
+  302  sudo systemctl status mindtrap.service 
+  303  sudo systemctl restart mindtrap.service 
+  304  sudo systemctl status mindtrap.service 
+  305  journalctl -u mindtrap.service -f -n 500
+  306  sudo systemctl status mindtrap.service 
+  307  journalctl -u mindtrap.service -f -n 500
+  308  sudo docker ps -a
+  309  sudo systemctl restart mindtrap.service 
+  310  journalctl -u mindtrap.service -f -n 500
+  311  sudo docker ps -a
+  312  sudo docker logs 485ee71bb0f0 | grep zhPfR5I6sq
+  313  sudo docker logs 485ee71bb0f0 
+  314  sudo docker logs 485ee71bb0f0 | grep zhPfR5I6sq
+  315  sudo docker logs 485ee71bb0f0 
+  316  16682652071668247897: Client mqttjs_ + 2bb4cc77 closed its connection.
+  317  1668247966: New client connected from ::ffff:192.168.178.69:65499 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  318  1668248017: Client mqttjs_ + 2bb4cc77 closed its connection.
+  319  1668248086: New client connected from ::ffff:192.168.178.69:65500 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  320  1668248137: Client mqttjs_ + 2bb4cc77 closed its connection.
+  321  1668248206: New client connected from ::ffff:192.168.178.69:65501 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  322  1668248257: Client mqttjs_ + 2bb4cc77 closed its connection.
+  323  1668248326: New client connected from ::ffff:192.168.178.69:65502 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  324  1668248377: Client mqttjs_ + 2bb4cc77 closed its connection.
+  325  1668248446: New client connected from ::ffff:192.168.178.69:65503 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  326  1668248497: Client mqttjs_ + 2bb4cc77 closed its connection.
+  327  1668248566: New client connected from ::ffff:192.168.178.69:65504 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  328  1668248617: Client mqttjs_ + 2bb4cc77 closed its connection.
+  329  1668248686: New client connected from ::ffff:192.168.178.69:65505 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  330  1668248737: Client mqttjs_ + 2bb4cc77 closed its connection.
+  331  1668248806: New client connected from ::ffff:192.168.178.69:65506 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  332  1668248857: Client mqttjs_ + 2bb4cc77 closed its connection.
+  333  1668248926: New client connected from ::ffff:192.168.178.69:65515 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  334  1668248977: Client mqttjs_ + 2bb4cc77 closed its connection.
+  335  1668249046: New client connected from ::ffff:192.168.178.69:65516 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  336  1668249097: Client mqttjs_ + 2bb4cc77 closed its connection.
+  337  1668249166: New client connected from ::ffff:192.168.178.69:65520 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  338  1668249217: Client mqttjs_ + 2bb4cc77 closed its connection.
+  339  1668249286: New client connected from ::ffff:192.168.178.69:65523 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  340  1668249337: Client mqttjs_ + 2bb4cc77 closed its connection.
+  341  1668249406: New client connected from ::ffff:192.168.178.69:65526 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  342  1668249457: Client mqttjs_ + 2bb4cc77 closed its connection.
+  343  1668249526: New client connected from ::ffff:192.168.178.69:65527 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  344  1668249577: Client mqttjs_ + 2bb4cc77 closed its connection.
+  345  1668249646: New client connected from ::ffff:192.168.178.69:65528 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  346  1668249697: Client mqttjs_ + 2bb4cc77 closed its connection.
+  347  1668249766: New client connected from ::ffff:192.168.178.69:49154 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  348  1668249817: Client mqttjs_ + 2bb4cc77 closed its connection.
+  349  1668249886: New client connected from ::ffff:192.168.178.69:49160 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  350  1668249937: Client mqttjs_ + 2bb4cc77 closed its connection.
+  351  1668250006: New client connected from ::ffff:192.168.178.69:49161 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  352  1668250057: Client mqttjs_ + 2bb4cc77 closed its connection.
+  353  1668250126: New client connected from ::ffff:192.168.178.69:49163 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  354  1668250177: Client mqttjs_ + 2bb4cc77 closed its connection.
+  355  1668250246: New client connected from ::ffff:192.168.178.69:49164 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  356  1668250297: Client mqttjs_ + 2bb4cc77 closed its connection.
+  357  1668250366: New client connected from ::ffff:192.168.178.69:49165 as mqttjs_ + 2bb4cc77 (p2, c0, k30, u'pavlos').
+  358  1668250369: Client mqttjs_ + 1e89906d closed its connection.
+  359  1668250375: New client connected from ::ffff:192.168.178.69:2714 as mqttjs_ + 6459086a (p2, c0, k30, u'pavlos').
+  360  1668250375: New connection from 192.168.178.69:2716 on port 1883.
+  361  1668250375: New connection from 192.168.178.69:49718 on port 1883.
+  362  1668250376: Client <unknown> closed its connection.
+  363  1668250376: New connection from 192.168.178.69:49745 on port 1883.
+  364  sudo systemctl restart mindtrap.service 
+  365  sudo sysetmctl status mindtrap/
+  366  sudo systemctl status mindtrap.service 
+  367  journalctl -u mindtrap.service -f -n 500
+  368  sudo systemctl restart mindtrap.service 
+  369  journalctl -u mindtrap.service -f -n 500
+  370  docker ps -a
+  371  sudo docker ps -a
+  372  docker stop 485ee71bb0f0
+  373  sudo docker stop 485ee71bb0f0
+  374  cd mindtrap/
+  375  ls
+  376  vim mosquitto.conf 
+  377  sudo vim mosquitto.conf 
+  378  docker start thirsty_kirch
+  379  sudo docker start thirsty_kirch
+  380  sudo docker ps -a
+  381  sudo docker logs 485ee71bb0f0 
+  382  sudo vim mosquitto.conf 
+  383  sudo docker start thirsty_kirch
+  384  sudo docker logs 485ee71bb0f0 
+  385  journalctl -u mindtrap.service -f -n 500
+  386  ls
+  387  sudo docker logs 485ee71bb0f0 
+  388  sudo docker ps -a
+  389  sudo docker logs 485ee71bb0f0
+  390  [200~1664712758~
+  391  sudo docker logs 485ee71bb0f0 > logs.txt
+  392  cat logs.txt 
+  393  vim logs.txt 
+  394  sudo vim logs.txt 
+  395  sudo docker logs 485ee71bb0f0 > logs.txt
+  396  vim logs.txt 
+  397  exit
+  398  journalctl -u mindtrap.service -f -n 500
+  399  sudo systemctl restart mindtrap.service 
+  400  journalctl -u mindtrap.service -f -n 500
+  401  sudo systemctl restart mindtrap.service 
+  402  journalctl -u mindtrap.service -f -n 500
+  403  sudo systemctl status mosquitto.service
+  404  sudo systemctl restart mindtrap.service 
+  405  sudo systemctl status mindtrap.service 
+  406  journalctl -u mindtrap.service -f -n 500
+  407  vnstat
+  408  sudo apt install vnstat
+  409  vnstat
+  410  journalctl -u mindtrap.service -f -n 500
+  411  vnstat
+  412  sudo systemctl restart mindtrap.service 
+  413  journalctl -u mindtrap.service -f -n 500
+  414  journalctl -u mindtrap.service -f -n 500
+  415  vnstat
+  416  vnstat -l
+  417  sudo docker ps -a
+  418  sudo apt-get install tcpdump
+  419  clear
+  420  ls
+  421  sudo groupadd pcap
+  422  sudo chgrp pcap /usr/sbin/tcpdump
+  423  sudo apt-get install tcpdump
+  424  cd /usr/
+  425  cd sbin/
+  426  ls
+  427  ls | grep tcp
+  428  whereis tcpdump
+  429  sudo chgrp pcap /usr/bin/tcpdump
+  430  sudo chmod 750 /usr/bin/tcpdump
+  431  sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/tcpdump
+  432  tcpdump
+  433  sudo tcpdump
+  434  tcpdump -s 0 port ftp or ssh -i eth0 -w mycap.pcap
+  435  ipconfig
+  436  ifconfig
+  437  ip addr
+  438  sudo tcpdump -i any -s 100 -w opa.pcap
+  439  cd ~
+  440  sudo tcpdump -i any -s 100 -w opa.pcap
+  441  rm opa.pcap 
+  442  sudo tcpdump -i any -s 100 -w opa.pcap
+  443  sudo tcpdump -i any -w opa.pcap
+  444  sudo systemctl status mindtrap.service 
+  445  journalctl -u mindtrap.service -f -n 500
+  446  sudo tcpdump -i any -w opa.pcap
+  447  sudo tcpdump -i any -w opa.pcap
+  448  journalctl -u mindtrap.service -f -n 500
+  449  sudo systemctl restart mindtrap.service 
+  450  journalctl -u mindtrap.service -f -n 500
+  451  sudo tcpdump -i any -w opa.pcap
+  452  journalctl -u mindtrap.service -f -n 500
+  453  sudo systemctl restart mindtrap.service 
+  454  journalctl -u mindtrap.service -f -n 500
+  455  sudo systemctl restart mindtrap.service 
+  456  sudo docker ps -all
+  457  sudo docket start focused_nightingale
+  458  sudo docker start focused_nightingale
+  459  sudo docker ps -all
+  460  sudo systemctl restart mindtrap.service 
+  461  journalctl -u mindtrap.service -f -n 500
+  462  journalctl -u mindtrap.service -f -n 5000
+  463  journalctl -u mindtrap.service -f -n 300
+  464  sudo apt update
+  465  sudo apt -y upgrade
+  466  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+  467  echo "deb http://deb.anydesk.com/ all main" | sudo tee
+  468  sudo apt update
+  469  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+  470  sudo apt-get update
+  471  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+  472  sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+  473  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+  474  echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+  475  sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+  476  sudo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+  477  echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+  478  apt update
+  479  sudo apt update
+  480  sudo apt install anydesk
+  481  anydesk --get-id
+  482  sudo nano /etc/gdm3/custom.conf
+  483  sudo reboot
+  484  hostname -I
+  485  sudo apt install anydesk
+  486  sudo apt-get update
+  487  sudo systemctl status mindtrap.service 
+  488  journalctl -u mindtrap.service -f -n 500
+  489  sudo docker ps -all
+  490  sudo docker start focused_nightingale
+  491  sudo docker ps -all
+  492  sudo systemctl restart mindtrap.service 
+  493  sudo docker ps -all
+  494  sudo docker ps
+  495  sudo docker stop 93894ea09da6
+  496  journalctl -u mindtrap.service -f -n 500
+  497  sudo docker start 93894ea09da6
+  498  sudo docker ps
+  499  sudo docker stop 93894ea09da6
+  500  sudo docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2.0.10 –name mosquittocon
+  501  sudo systemctl status mosquitto.service
+  502  sudo docker images ls
+  503  sudo docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2.0.10 –name mosquittocon
+  504  sudo docker ps -a
+  505  sudo docker start 485ee71bb0f0
+  506  sudo docker stop 93894ea09da6
+  507  sudo docker start 485ee71bb0f0
+  508  netstat -tulpn | grep LISTEN | grep :1883
+  509  sudo apt install net-tools
+  510  netstat -tulpn | grep LISTEN | grep :1883
+  511  sudo ss -lptn 'sport = :1883'
+  512  htop
+  513  top
+  514  top | grep mosquitto
+  515  sudo systemctl stop mosquitto
+  516  sudo kill 1255
+  517  sudo docker start 485ee71bb0f0
+  518  sudo ss -lptn 'sport = :1883'
+  519  ps aux | grep mosquitto
+  520  sudo apt-get purge --remove mosquitto*
+  521  ps aux | grep mosquitto
+  522  kill -9 35271
+  523  sudo kill -9 35271
+  524  ps aux | grep mosquitto
+  525  sudo shutdown -r now
+  526  ps aux | grep mosquitto
+  527  sudo ss -lptn 'sport = :1883'
+  528  sudo kill -9 751
+  529  ps aux | grep mosquitto
+  530  ps aux | grep mosquitto
+  531  sudo docker ps -a
+  532  sudo docker start 485ee71bb0f0
+  533  sudo systemctl restart mindtrap.service 
+  534  journalctl -u mindtrap.service -f -n 500
+  535  sudo docker ps -a
+  536  journalctl -u mindtrap.service -f -n 500
+  537  sudo systemctl restart mindtrap.service 
+  538  journalctl -u mindtrap.service -f -n 500
+  539  sudo docker ps -a
+  540  sudo docker stop 485ee71bb0f0
+  541  sudo docker start 485ee71bb0f0
+  542  journalctl -u mindtrap.service -f -n 500
+  543  cd mindtrap/
+  544  ls
+  545  cat mosquitto.conf 
+  546  sudo docker ps -a
+  547  sudo docker stop 485ee71bb0f0
+  548  sudo docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:1.6.9 –name mosquittoold
+  549  sudo docker ps -a
+  550  sudo docker start 380b1f04e84c
+  551  sudo docker exec -it flamboyant_banach sh
+  552  sudo docker logs flamboyant_banach
+  553  sudo docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:1.6.9 
+  554  sudo docker ps -a
+  555  sudo docker start vibrant_euclid
+  556  sudo docker logs vibrant_euclid
+  557  sudo docker exec -it vibrant_euclid sh
+  558  sudo docker run -it -d -p 1883:1883 -p 9001:9001  eclipse-mosquitto:1.6.9 
+  559  sudo docker ps -a
+  560  sudo docker exec -it practical_hugle sh
+  561  docker ps -a
+  562  sudo docker ps -a
+  563  sudo docker start practical_hugle
+  564  sudo docker exec -it practical_hugle sh
+  565  sudo docker stop practical_hugle
+  566  sudo docker start practical_hugle
+  567  sudo docker ps -a
+  568  sudo docker logs 2d0a982e47bf
+  569  cd /etc/mosquitto/
+  570  ls
+  571  cat passwd 
+  572  sudo docker exec -it  2d0a982e47bf sh
+  573  sudo docker ps -a
+  574  sudo docker run --rm -it --name  practical_hugle bash
+  575  sudo docker run -it -d -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:1.6.9 --name hihi
+  576  sudo docker ps -a
+  577  sudo docker run -it -d --name hihi -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:1.6.9 
+  578  sudo docker ps -a
+  579  sudo docker start hihi
+  580  sudo docker exec -it hihi sh
+  581  cd ~
+  582  ls
+  583  cd mindtrap/
+  584  ls
+  585  vim mosquitto.conf 
+  586  sudo vim mosquitto.conf 
+  587  docker run -it -d --name hihiv -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf -v ~/mindtrap/mosquitto/data -v ~/mindtrap/mosquitto/log eclipse-mosquitto:1.6.9
+  588  sudo docker run -it -d --name hihiv -p 1883:1883 -p 9001:9001 -v ~/mindtrap/mosquitto.conf:/mosquitto/config/mosquitto.conf -v ~/mindtrap/mosquitto/data -v ~/mindtrap/mosquitto/log eclipse-mosquitto:1.6.9
+  589  sudo docker ps -a
+  590  sudo docker exec -it hihiv sh
+  591  sudo docker stop hihiv
+  592  sudo vim ~/mindtrap/mosquitto.conf 
+  593  sudo docker start hihiv
+  594  sudo docker ps -a
+  595  sudo systemctl restart mindtrap.service 
+  596  journalctl -u mindtrap.service -f -n 500
+  597  cd ~
+  598  ls
+  599  sudo systemctl restart mindtrap.service 
+  600  journalctl -u mindtrap.service -f -n 500
+  601  sudo docker ps -a
+  602  sudo docker rm 3edf200e2b8e c61d4b0458be 2d0a982e47bf 380b1f04e84c 82c59437a437 93894ea09da6 9a83808bae5e 8da9a76f61f2
+  603  sudo docker ps -a
+  604  sudo docker rm 5d53c009dd8d5
+  605  sudo docker rm adbfd7fa3486 39f6dde72b80 5d53c009dd8d 32616fa07f0c 1f7af16d100b cbda3b8b81b7 c98dd27e955f 485ee71bb0f0
+  606  journalctl -u mindtrap.service -f -n 500
+  607  sudo docker ps -all
+  608  journalctl -u mindtrap.service -f -n 500
+  609  sudo systemctl restart mindtrap.service 
+  610  htop
+  611  top
+  612  journalctl -u mindtrap.service -f -n 500
+  613  sudo systemctl restart mindtrap.service 
+  614  journalctl -u mindtrap.service -f -n 500
+  615  sudo systemctl restart mindtrap.service 
+  616  journalctl -u mindtrap.service -f -n 500
+  617  sudo /etc/systemd/system/
+  618  cd /etc/systemd/system/
+  619  ls
+  620  cat mindtrap.service 
+  621  ipconfig
+  622  net addr
+  623  ip addr
+  624  journalctl -u mindtrap.service -f -n 500
+  625  ip addr
+  626  netstat -rn
+  627  route -n
+  628  journalctl -u mindtrap.service -f -n 500
+  629  ip addr
+  630  journalctl -u mindtrap.service -f -n 500
+  631  ipconfig
+  632  ip addr
+  633  ls
+  634  cd mindtrap/
+  635  ls
+  636  cd build/
+  637  ls
+  638  cd ..
+  639  sudo cp -r build/* /var/www/html
+  640  ip addr
+  641  echo mindtr@p | anydesk --set-password
+  642  anydesk --get-id
+  643  sudo anydesk --get-id
+  644  sudo echo mindtr@p | anydesk --set-password
+  645  sudo nano /etc/gdm3/custom.conf
+  646  sudo reboot
+  647  sudo anydesk --get-status
+  648  sudo anydesk
+  649  sudo anydesk --get-status
+  650  anydesk
+  651  sudo anydesk --get-status
+  652  ip addr
+  653  sudo nano /etc/gdm3/custom.conf
+  654  sudo reboot
+  655  anydesk
+  656  sudo anydesk --get-status
+  657  echo mindtr@p | sudo anydesk --set-password
+  658  sudo apt-get install xserver-xorg-video-dummy
+  659  sudo vi /usr/share/X11/xorg.conf.d/xorg.conf
+  660  sudo nano /usr/share/X11/xorg.conf.d/xorg.conf
+  661  sudo reboot
+  662  ip addr
+  663  ping 192.168.10.100
+  664  journalctl -u mindtrap.service -f -n 500
+  665  anydesk
+  666  sudo nano /etc/rc.local
+  667  sudo chmod a+x /etc/rc.local
+  668  sudo reboot
+  669  sudo nano /etc/rc.local
+  670  anydesk
+  671  systemctl status anydesk
+  672  systemctl enable anydesk
+  673  sudo reboot
+  674  sudo rm /etc/rc.local
+  675  sudo reboot
+  676  hostname -I
+  677  sudo docker ps -all
+  678  sudo nano /etc/dhcp/dhclient.conf
+  679  hostname -I
+  680  ip addr
+  681  sudo anydesk --get-status
+  682  sudo systemctl restart mindtrap.service
+  683  sudo systemctl status mindtrap.service
+  684  sudo docker ps -all
+  685  sudo docker start 9c65b8a8af77
+  686  sudo systemctl status mindtrap.service
+  687  sudo systemctl restart mindtrap.service
+  688  sudo nano /etc/netplan/01-netcfg.yaml
+  689  sudo systemctl status mindtrap.service
+  690  sudo docker ps -all
+  691  sudo docker start hihiv
+  692  sudo docker ps -all
+  693  sudo systemctl restart mindtrap.service
+  694  sudo docker ps -all
+  695  sudo docker start hihiv
+  696  sudo systemctl restart mindtrap.service
+  697  sudo docker ps -all
+  698  sudo systemctl status mindtrap.service
+  699  journalctl -u mindtrap.service -f -n 500
+  700  sudo systemctl status mindtrap.service
+  701  sudo snap install heidisql-wine --beta
+  702  sudo systemctl stop mindtrap.service
+  703  sudo systemctl status mindtrap.service
+  704  sudo systemctl start mindtrap.service
+  705  journalctl -u mindtrap.service -f -n 500
+  706  sudo docker ps -all
+  707  sudo docker start hihiv
+  708  sudo docker ps -all
+  709  sudo systemctl stop mindtrap.service
+  710  sudo systemctl start mindtrap.service
+  711  sudo systemctl status mindtrap.service
+  712  sudo docker ps -all
+  713  sudo docker start hihiv
+  714  sudo docker ps -all
+  715  sudo systemctl restart mindtrap.service
+  716  journalctl -u mindtrap.service -f -n 500
+  717  sudo docker ps -all
+  718  sudo docker start hihiv
+  719  sudo systemctl restart mindtrap.service
+  720  journalctl -u mindtrap.service -f -n 500
+  721  mysql -u root -p
+  722  mysql -u pavlos -p
+  723  sudo systemctl stop mindtrap.service
+  724  journalctl -u mindtrap.service -f -n 500
+  725  sudo systemctl stop mindtrap.service
+  726  sudo systemctl start  mindtrap.service
+  727  sudo docker start hihiv
+  728  sudo systemctl stop mindtrap.service
+  729  sudo systemctl start  mindtrap.service
+  730  journalctl -u mindtrap.service -f -n 500
+  731  sudo systemctl start  mindtrap.service
+  732  journalctl -u mindtrap.service -f -n 500
+  733  ip a
+  734  journalctl -u mindtrap.service -f -n 500
+  735  sudo docker start hihiv
+  736  sudo systemctl restart mindtrap.service
+  737  sudo systemctl status mindtrap.service
+  738  journalctl -u mindtrap.service -f -n 500
+  739  sudo docker start hihiv
+  740  sudo docker ps -all
+  741  docker update --restart=always hihiv
+  742  sudo docker update --restart=always hihiv
+  743  sudo docker ps -all
+  744  sudo docker logs -t hihiv
+  745  sudo docker logs -t --until=2d  hihiv
+  746  sudo docker logs -t --until=2d hihiv
+  747  sudo docker logs -t --until=86400s hihiv
+  748  sudo docker logs -t --since 2023-06-03T13:23:37Z
+  749  sudo docker logs --since 2023-06-03T13:23:37Z
+  750  sudo docker logs -t --since 2023-06-03T13:23:37Z hihiv
+  751  sudo docker logs -t --since 2023-06-02T13:23:37Z hihiv
+  752  sudo docker logs -t --since 2023-02-06T13:23:37Z hihiv
+  753  sudo docker logs --since 2023-02-06T13:23:37Z hihiv
+  754  sudo docker logs -f --since 2023-02-06T13:23:37Z hihiv
+  755  sudo docker logs --tail 2000
+  756  sudo docker logs --tail 2000 hihiv
+  757  sudo docker logs -t --tail 2000 hihiv
+  758  sudo docker logs -t --tail 30000 hihiv
+  759  sudo docker logs -t --tail 2000000 hihiv
+  760  sudo docker logs -t --tail 200000 hihiv
+  761  sudo docker logs -t --tail 200000 hihiv mylogs.txt 2>&1
+  762  sudo docker logs -t --tail 200000 hihiv > logs.txt
+  763  sudo docker ps -a
+  764  sudo add-apt-repository ppa:wireshark-dev/stable
+  765  sudo update
+  766  sudo apt update
+  767  sudo apt-get install wireshark
+  768  sudo wireshark
+  769  sudo systemctl status mindtrap.service 
+  770  sudo journalctl -t  mindtrap.service 
+  771  journalctl -u mindtrap.service -f -n 500
+  772  sudo systemctl start mindtrap.service 
+  773  journalctl -u mindtrap.service -f -n 500
+  774  sudo systemctl stop mindtrap.service 
+  775  sudo systemctl start mindtrap.service 
+  776  journalctl -u mindtrap.service -f -n 500
+  777  sudo docker ps -a
+  778  sudo docker stop hihiv
+  779  sudo docker start hihiv
+  780  sudo docker ps -a
+  781  killall wireshark
+  782  sudo killall wireshark
+  783  mv /tmp/wireshark_enp1s0UHQV51.pcapng ~
+  784  sudo mv /tmp/wireshark_enp1s0UHQV51.pcapng ~
+  785  sudo chmod a+rwx \home\ag3ntf4ctory
+  786  sudo chmod a+rwx \home\ag3ntf4ctory/
+  787  sudo chmod -R 777 /home/ag3ntf4ctory
+  788  sudo systemctl stop mindtrap.service 
+  789  sudo systemctl start mindtrap.service 
+  790  sudo journalctl -u mindtrap.service -f
+  791  sudo docker ps -a
+  792  sudo journalctl -u mindtrap.service -f
+  793  sudo systemctl status mindtrap.service 
+  794  sudo docker ps -a
+  795  sudo docker logs -t --tail 200000 hihiv > logs.txt
+  796  sudo docker logs -t --tail 200000 hihiv
+  797  sudo docker logs -t --tail 5000 hihiv > logs.txt
+  798  sudo docker logs -t --tail 5000 hihiv
+  799  sudo journalctl -u mindtrap.service -f
+  800  sudo journalctl -u mindtrap.service --since -10m > all_logs.txt
+  801  sudo journalctl -u mindtrap.service --since -120m > all_logs.txt
+  802  sudo journalctl -u mindtrap.service --since -180m > all_logs.txt
+  803  sudo journalctl -u mindtrap.service > all_logs.txt
+  804  sudo docker logs -t --tail 50000 hihiv
+  805  sudo docker logs -t --tail 400000 hihiv > logs.txt
+  806  sudo docker logs -t --tail 900000 hihiv > logs.txt
+  807  sudo netstat -tulpn | grep :1883
+  808  sudo systemctl stop mindtrap.service
+  809  sudo systemctl start mindtrap.service
+  810  sudo journalctl -u mindtrap.service -f
+  811  sudo journalctl -u mindtrap.service -f -n 10000
+  812  sudo journalctl -u mindtrap.service -f 
+  813  getmac
+  814  ifconfig
+  815  sudo docker ps -a
+  816  sudo docker stop hihiv
+  817  sudo docker start hihiv
+  818  sudo systemctl status mindtrap.service 
+  819  sudo systemctl stop mindtrap.service 
+  820  sudo systemctl start mindtrap.service 
+  821  sudo systemctl status mindtrap.service 
+  822  sudo systemctl stop mindtrap.service 
+  823  sudo docker stop hihiv
+  824  tcpdump -s 0 -i any -w mycap.pcap
+  825  sudo tcpdump -s 0 -i any -w mycap.pcap
+  826  ls -al
+  827  sudo docker ps -a
+  828  ifconfig
+  829  sudo docker start hihiv
+  830  sudo systemctl startmindtrap.service 
+  831  sudo systemctl start mindtrap.service 
+  832  clear
+  833  sudo systemctl start mindtrap.service 
+  834  clear
+  835  sudo docker ps -a
+  836  sudo systemctl status mindtrap.service 
+  837  sudo journalctl -u mindtrap.service -f 
+  838  clear
+  839  l
+  840  ls
+  841  clear
+  842  cd /home/ag3ntf4ctory/testdic
+  843  cd /home/
+  844  ls
+  845  cd ag3ntf4ctory/
+  846  ls
+  847  cd testdic
+  848  cd mindtrap/
+  849  ls
+  850  cat /etc/nginx/sites-available/default 
+  851  cd /var/www/html/
+  852  ls
+  853  mysql -u root -p 
+  854  mysql -u root -p
+  855  mindtr@p
+  856  mysql -u pavlos -p
+  857  sudo journalctl -u mindtrap.service -f 
+  858  sudo journalctl -u mindtrap.service -f 
+  859  sudo tcpdump -s 0 -i any -w mycap276.pcap
+  860  ls
+  861  ls -al
+  862  sudo systemctl status mindtrap.service 
+  863  sudo docker status hihiv
+  864  sudo docker ps all
+  865  sudo docker -ps all
+  866  sudo docker ps -a
+  867  sudo systemctl stop mindtrap.service 
+  868  sudo systemctl start mindtrap.service 
+  869  sudo systemctl status mindtrap.service 
+  870  sudo journalctl -u mindtrap.service -f 
+  871  history > history_for_print.txt

@@ -1,0 +1,1000 @@
+  360  vim gameplay 
+  361  sudo /etc/init.d/nginx stop
+  362  sudo /etc/init.d/nginx start
+  363  curl localhost:9001
+  364  cat gameplay 
+  365  vim gameplay 
+  366  sudo /etc/init.d/nginx stop
+  367  sudo /etc/init.d/nginx start
+  368  curl localhost:9001
+  369  curl localhost:80
+  370  curl localhost:9001
+  371  curl localhost:9001/gameplay
+  372  vim gameplay 
+  373  sudo /etc/init.d/nginx stop
+  374  sudo /etc/init.d/nginx start
+  375  curl localhost/gameplay
+  376  ls
+  377  cd game
+  378  ls
+  379  cat /var/www/gameplay/index.html 
+  380  ls
+  381  cat gameplay 
+  382  cat default 
+  383  ls
+  384  vim gameplay 
+  385  sudo /etc/init.d/nginx stop
+  386  sudo /etc/init.d/nginx start
+  387  curl localhost/gameplay
+  388  ls
+  389  cat gameplay 
+  390  vim gameplay 
+  391  sudo /etc/init.d/nginx stop
+  392  sudo /etc/init.d/nginx start
+  393  curl localhost/gameplay
+  394  curl localhost/gameplay/dsfsdfsdf
+  395  cd ..
+  396  cd sites-enabled/
+  397  ls
+  398  sudo systemctl reload nginx.service 
+  399  ls
+  400  cd ..
+  401  ls
+  402  cd sites-available/
+  403  ls
+  404  cd ..
+  405  ls
+  406  cat conf.d/
+  407  cd conf.d/
+  408  cat
+  409  ls
+  410  cd ..
+  411  ls
+  412  cat nginx.conf 
+  413  ls
+  414  cd sites-available/
+  415  ls
+  416  cat gameplay 
+  417  ls
+  418  vim gameplay 
+  419  rm gameplay 
+  420  ls
+  421  vim default 
+  422  sudo systemctl reload nginx.service 
+  423  curl localhost/gameplay
+  424  curl localhost/gameplay/index.html
+  425  curl localhost/index.html
+  426  curl localhost/gameplay
+  427  ls
+  428  vim default 
+  429  cd /var/www/gameplay/
+  430  ls
+  431  ls static/
+  432  ls
+  433  curl localhost/gameplay
+  434  ls
+  435  cd ..
+  436  cd /etc/nginx/
+  437  ls
+  438  cd sites-available/
+  439  ls
+  440  cat default 
+  441  q
+  442  ls
+  443  vim default 
+  444  sudo systemctl reload nginx.service 
+  445  sudo systemctl stop nginx.service 
+  446  curl localhost/gameplay
+  447  sudo systemctl start nginx.service 
+  448  curl localhost/gameplay
+  449  ls
+  450  vim default 
+  451  sudo systemctl reload nginx.service 
+  452  sudo systemctl stop nginx.service 
+  453  sudo systemctl start nginx.service 
+  454  curl localhost/gameplay
+  455  curl localhost
+  456  cd /var\
+  457  cd /var/www/gameplay/
+  458  ls
+  459  cd html/
+  460  ls
+  461  cd ..
+  462  rm -rf html/
+  463  cd /etc/nginx/
+  464  ls
+  465  cd sites-available/
+  466  ls
+  467  vim default 
+  468  sudo systemctl stop nginx.service 
+  469  sudo systemctl start nginx.service 
+  470  curl localhost/gameplay
+  471  vim default 
+  472  ks
+  473  ls
+  474  cd /var/www/html
+  475  ks
+  476  ls
+  477  mv ../gameplay .
+  478  ls
+  479  cd /etc/nginx/
+  480  ls
+  481  cd sites-available/
+  482  ls
+  483  vim default 
+  484  sudo systemctl stop nginx.service 
+  485  sudo systemctl start nginx.service 
+  486  curl localhost/gameplay
+  487  vim default 
+  488  sudo systemctl stop nginx.service 
+  489  sudo systemctl start nginx.service 
+  490  vim default 
+  491  sudo systemctl start nginx.service 
+  492  curl localhost/gameplay
+  493  curl localhost/gameplay/index.html
+  494  vim def
+  495  clear
+  496  vim default 
+  497  pwd
+  498  cat default
+  499  q
+  500  cat default 
+  501  curl localhost/gameplay/index.html
+  502  curl localhost/gameplay
+  503  cd sites-available/
+  504  cd /var/www/html
+  505  ls
+  506  cd /etc/nginx/
+  507  cd sites-available/
+  508  ls
+  509  sudo nano default
+  510  culr localhost
+  511  curl localhost
+  512  quit
+  513  exit
+  514  quit
+  515  exit
+  516  ls
+  517  curl localhost
+  518  ls
+  519  cd /var/www/
+  520  ls
+  521  cd html/
+  522  ls
+  523  cd gameplay/
+  524  ls
+  525  vim /etc/nginx/nginx.conf 
+  526  vim /etc/nginx/sites-available/default 
+  527  cd ..
+  528  ls
+  529  cat index.html 
+  530  curl localhost/gameplay
+  531  curl localhost/gameplayfdfs
+  532  vim /etc/nginx/sites-available/default 
+  533  sudo systemctl stop nginx.service 
+  534  sudo systemctl start nginx.service 
+  535  curl localhost/gameplayfdfs
+  536  curl localhost/gameplay
+  537  vim /etc/nginx/sites-available/default 
+  538  sudo systemctl stop nginx.service 
+  539  sudo systemctl start nginx.service 
+  540  curl localhost/gameplay
+  541  curl localhost/gameplay/index.html
+  542  vim /etc/nginx/sites-available/default 
+  543  sudo systemctl stop nginx.service 
+  544  sudo systemctl start nginx.service 
+  545  curl localhost/gameplay/index.html
+  546  curl localhost/gameplay
+  547  curl localhost/gameplay/
+  548  vim /etc/nginx/sites-available/default 
+  549  sudo systemctl stop nginx.service 
+  550  sudo systemctl start nginx.service 
+  551  curl localhost/gameplay
+  552  ls
+  553  cd gameplay/
+  554  cat index.html 
+  555  cd ..
+  556  journalctl -u nginx.service -n 200 -f
+  557  vim /etc/nginx/sites-available/default 
+  558  sudo systemctl stop nginx.service 
+  559  sudo systemctl start nginx.service 
+  560  tail -f /var/log/nginx/access.log
+  561  vim /etc/nginx/sites-available/default 
+  562  sudo systemctl stop nginx.service 
+  563  sudo systemctl start nginx.service 
+  564  vim /etc/nginx/sites-available/default 
+  565  curl localhost/gameplay
+  566  curl 78.159.98.230/gameplay
+  567  sudo systemctl stop nginx.service 
+  568  sudo systemctl start nginx.service 
+  569  tail -f /var/log/nginx/access.log
+  570  sudo systemctl stop nginx.service 
+  571  sudo systemctl start nginx.service 
+  572  tail -f /var/log/nginx/access.log
+  573  curl 78.159.98.230/gameplay
+  574  curl localhost/gameplay
+  575  tail -f /var/log/nginx/access.log
+  576  nginx version
+  577  nginx --v
+  578  nginx --version
+  579  nginx -version
+  580  sudo systemctl status nginx.service 
+  581  cd ~
+  582  ls
+  583  cd agentfactory/
+  584  ls
+  585  mv build gameplay
+  586  ls
+  587  mkdir administration
+  588  ls
+  589  vim /etc/nginx/sites-available/default 
+  590  sudo systemctl stop nginx.service 
+  591  sudo systemctl start nginx.service 
+  592  curl localhost/gameplay
+  593  curl localhost
+  594  clear
+  595  ls
+  596  cd gameplay/
+  597  ls
+  598  cd ..
+  599  ls
+  600  cd administration
+  601  ls
+  602  cd /var/www/
+  603  ls
+  604  cd html/
+  605  ls
+  606  mkdir administration
+  607  ls
+  608  cd administration
+  609  ls
+  610  cp -r ~/agentfactory/administration/* .
+  611  ls
+  612  cd ..
+  613  vim /etc/nginx/sites-available/default 
+  614  sudo systemctl stop nginx.service 
+  615  sudo systemctl start nginx.service 
+  616  curl localhost/administration
+  617  curl localhost/gameplay
+  618  ls
+  619  curl localhost/administration
+  620  sudo systemctl status nginx.service 
+  621  nginx --version
+  622  nginx -v
+  623  cd /var/www/html
+  624  ls
+  625  cd gameplay
+  626  ls
+  627  sudo nano /etc/nginx/sites-available/default 
+  628  systemctl restart mosquitto.service
+  629  systemctl status mosquitto.service
+  630  sudo nano /etc/mosquitto/conf.d/default.conf
+  631  systemctl restart mosquitto.service
+  632  systemctl status mosquitto.service
+  633  journalctl -u nginx.service -n 200 -f
+  634  journalctl -u mosquitto-service -n 200 -f
+  635  journalctl -u mosquitto.service -n 200 -f
+  636  journalctl -u nginx.service -n 200 -f
+  637  systemctl status nginx.service
+  638  systemctl status mosquitto.service
+  639  sudo nano /etc/mosquitto/conf.d/default.conf
+  640  systemctl restart nginx.service
+  641  journalctl -u nginx.service -n 200 -f
+  642  journalctl -u nginx.service -n 200
+  643  journalctl -u nginx.service -n 200 -f
+  644  nginx -v
+  645  curl localhost/gameplay
+  646  curl localhost/administration
+  647  sudo nano /etc/nginx/sites-available/default 
+  648  curl localhost/administration
+  649  systemctl restart nginx.service 
+  650  curl localhost/administration
+  651  curl localhost/registration
+  652  curl localhost/registratio
+  653  curl localhost/gameplay
+  654  ls
+  655  cd agentfactory/
+  656  ls
+  657  cd administration/
+  658  ls
+  659  which vi
+  660  cd /var/www
+  661  ls
+  662  cd html
+  663  ls
+  664  cd administration/
+  665  ls
+  666  cd ../
+  667  ls
+  668  ls administration/
+  669  history
+  670  vi /etc/nginx/sites-available/default
+  671  ls
+  672  history
+  673  cat /etc/nginx/sites-available/default
+  674  ls
+  675  exit
+  676  ls
+  677  ls /
+  678  ls
+  679  ls /
+  680  rm someFile.txt
+  681  ls
+  682  cd /
+  683  ls
+  684  rm someFile.txt
+  685  rm subdir
+  686  rm -rdf subdir
+  687  ls
+  688  cd ~
+  689  ls
+  690  cd /
+  691  ls
+  692  cd root
+  693  ls
+  694  tar -tvf agent
+  695  tar -tvf agent_factory-v0.0.1.tar.gz 
+  696  ls
+  697  cd /var/www/html
+  698  ls
+  699  ls administration/
+  700  ls
+  701  ls
+  702  exit
+  703  cd ..
+  704  ip a
+  705  ping 192.168.10.3
+  706  ping 192.168.1.3
+  707  ip a
+  708  df- h
+  709  df -h
+  710  ufw status
+  711  ip a
+  712  cd ..
+  713  cd /etc/nginx
+  714  ls
+  715  cd sites-enabled/
+  716  ls
+  717  cd ..
+  718  cd sites-available/
+  719  ls
+  720  ls -lsa
+  721  vi default 
+  722  service nginx restart
+  723  cd ..
+  724  cd sites-enabled/
+  725  vi default 
+  726  cd /var/www/html
+  727  ls
+  728  cd gameplay/
+  729  ls
+  730  tail /var/log/nginx//error.log
+  731  vi /etc/nginx/sites-enabled/
+  732  vi /etc/nginx/sites-enabled/default 
+  733  service nginx restart
+  734  tail /var/log/nginx//error.log
+  735  ls
+  736  vi /etc/nginx/sites-enabled/default 
+  737  cd ..
+  738  ls
+  739  vi index.html 
+  740  cd administration/
+  741  ls
+  742  touch adam.txt
+  743  vi adam.txt 
+  744  npm
+  745  cd ..
+  746  ls
+  747  vi manifest.json
+  748  ls
+  749  vi index.html 
+  750  ls
+  751  history
+  752  cat /etc/nginx/sites-available/default
+  753  ls /etc/nginx
+  754  cat /etc/nginx/nginx.conf
+  755  ls
+  756  ls /var/www
+  757  pwd
+  758  ls /
+  759  ls
+  760  ls /var/www
+  761  ls /var/www/html
+  762  ls srv
+  763  ls /srv
+  764  ls
+  765  ls /etc/nginx
+  766  ls /etc/nginx/conf.d
+  767  ls
+  768  tar -tvf agent_factory-v0.0.1.tar.gz 
+  769  cd /
+  770  ls
+  771  cp -r etc etc.bak
+  772  ls
+  773  cd root
+  774  ls
+  775  tar -xvf agent_factory-v0.0.1.tar.gz --strip-components=1
+  776  ls
+  777  tree etc
+  778  ls
+  779  cp etc/nginx/conf.d/agent_factory.conf /etc/nginx/conf.d/agent_factory.conf
+  780  ls
+  781  cp srv /srv
+  782  cp -r srv /srv
+  783  ls
+  784  cd /
+  785  ls
+  786  ls srv
+  787  cd srv
+  788  ls
+  789  mv srv/* .
+  790  ls
+  791  rm -rdf srv
+  792  cd ../
+  793  ls
+  794  cd etc/nginx
+  795  ls
+  796  cd conf.d
+  797  ls
+  798  cd ../
+  799  ls
+  800  vi
+  801  ls
+  802  vi nginx.conf
+  803  nginx -s reload
+  804  systemctl status nginx
+  805  cd ../
+  806  ls
+  807  cd nginx
+  808  ls
+  809  cd conf.d
+  810  ls
+  811  ls -a
+  812  ls -l
+  813  cd ../
+  814  ls
+  815  cd ../
+  816  ls
+  817  cd /
+  818  ls
+  819  cd srv
+  820  ls
+  821  cd gameplay/
+  822  ls
+  823  cd
+  824  ls
+  825  sudo apt istall emacs
+  826  ls
+  827  cd /etc
+  828  ls
+  829  cd nginx
+  830  ls
+  831  cd sites-enabled
+  832  ls
+  833  cat default
+  834  ls
+  835  mv default bak.default
+  836  ls
+  837  ls -l
+  838  ls
+  839  mv bak.default default
+  840  ls
+  841  ls -l
+  842  ls ../sites-available/
+  843  ln -s default /etc/nginx/conf.d/agent_factory.conf 
+  844  ls
+  845  ln -s /etc/nginx/conf.d/agent_factory.conf default
+  846  ls
+  847  rm default
+  848  ls
+  849  ln -s /etc/nginx/conf.d/agent_factory.conf default
+  850  ls
+  851  systemctl restart nginx
+  852  systemctl status nginx
+  853  ls
+  854  cd ..
+  855  ls
+  856  cd conf.d
+  857  ls
+  858  vi agent_factory.conf 
+  859  ls
+  860  systemctl restart nginx
+  861  ls
+  862  vi agent_factory.conf 
+  863  ls
+  864  systemctl restart nginx
+  865  ls
+  866  cd ../
+  867  ls
+  868  cat nginx.conf
+  869  ls
+  870  cd sites-enabled
+  871  ls
+  872  rm default
+  873  ls
+  874  cd ./.
+  875  ls
+  876  sudo systemctl restart nginx
+  877  sudo lsof -i -P -n
+  878  ls
+  879  cd
+  880  ls
+  881  ls /
+  882  ls /srv/
+  883  ls /srv/administration/
+  884  cd
+  885  ls
+  886  cd /etc/nginx
+  887  ls
+  888  cd conf.d
+  889  ls
+  890  ls /var/log
+  891  ls /var/log/nginx
+  892  tail -f /var/log/nginx/error.log
+  893  nginx -t
+  894  ls
+  895  vi agent_factory.conf 
+  896  ls
+  897  cat *.conf
+  898  ls
+  899  cd
+  900  ls
+  901  ls /var/www/html
+  902  cd
+  903  ls
+  904  ls srv
+  905  rm -rdf /var/www/html/administration/
+  906  rm -rdf /var/www/html/gameplay
+  907  ls
+  908  cp -r srv/* /var/www/html/
+  909  ls /var/www/html
+  910  cd
+  911  ls
+  912  cd /etc/nginx/conf.d
+  913  ls
+  914  vi agent
+  915  vi agent_factory.conf 
+  916  ls
+  917  nginx -t
+  918  ls
+  919  vi agent_factory.conf 
+  920  ls
+  921  nginx -t
+  922  sudo systemctl restart nginx
+  923  ls
+  924  ls /var/log/nginx
+  925  tail -f  /var/log/nginx/error.log
+  926  ls
+  927  vi agent_factory.conf 
+  928  ls
+  929  nginx -t
+  930  nginx -s reload
+  931  ls
+  932  vi agent_factory.conf 
+  933  ls
+  934  nginx -t
+  935  nginx -s reload
+  936  ls
+  937  sudo systemctl restart
+  938  sudo systemctl restart nginx
+  939  ls
+  940  ls
+  941  ls /var/www/html
+  942  ls
+  943  cd /var/www/html
+  944  ls
+  945  cd administration/
+  946  ls
+  947  cat index.html
+  948  ls
+  949  cd ../
+  950  ls
+  951  grep -rEin 'localhost' administration/
+  952  grep -rEin '.*localhost/administration.*' administration/
+  953  ls
+  954  grep -rEin '.*/administration.*' administration/
+  955  ls
+  956  clear
+  957  ls
+  958  c d../
+  959  cd ./.
+  960  cd ../
+  961  ls
+  962  cd /
+  963  ls
+  964  cd ~
+  965  ls
+  966  vi check_conf.sh
+  967  ls
+  968  chmod +x ./check_conf.sh
+  969  ls
+  970  ./check_conf.sh
+  971  vi check_conf.sh 
+  972  ls
+  973  ./check_conf.sh 
+  974  ls
+  975  tail -f /var/log/nginx/access.log
+  976  ls
+  977  systemctl restart nginx
+  978  ls
+  979  ./check_conf.sh 
+  980  ls
+  981  history
+  982  tail -f /var/log/nginx/access.log
+  983  tair -f /var/log/nginx/error.log
+  984  tail -f /var/log/nginx/error.log
+  985  ls
+  986  systemctl restart nginx
+  987  history
+  988  reload -s reload
+  989  nginx -s reload
+  990  ls
+  991  history
+  992  tail -f /var/log/nginx/access.log
+  993  ls
+  994  ./check_conf.sh 
+  995  ls
+  996  ./check_conf.sh 
+  997  systemctl reload nginx
+  998  ls
+  999  sudo nmap -sT localhost
+ 1000  sudo apt install nmap
+ 1001  ls
+ 1002  nmap -sT -O localhost
+ 1003  iptables -S
+ 1004  netstat -lntu
+ 1005  apt install netstat
+ 1006  uname -a
+ 1007  ls
+ 1008  apt search netstat
+ 1009  apt update && apt upgrade
+ 1010  ls
+ 1011  apt install net-tools
+ 1012  ls
+ 1013  which netstat
+ 1014  man reboot
+ 1015  reboot
+ 1016  ls
+ 1017  uname
+ 1018  unam e-a
+ 1019  uname -a
+ 1020  netstat -lntu
+ 1021  nmap -sT -o localhost
+ 1022  nmap -sT -O localhost
+ 1023  iptables -S
+ 1024  netstat -lntu
+ 1025  nmap -p 8080 localhost
+ 1026  netstat -na | grep :8080
+ 1027  which ufw
+ 1028  ufw allow 8080
+ 1029  nmap -p 8080 localhost
+ 1030  sudo ufw allow 8080
+ 1031  uname -a
+ 1032  which iptables
+ 1033  iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+ 1034  nmap -p 8080 localhost
+ 1035  netstat -tulpn | grep LISTEN
+ 1036  ls
+ 1037  cat /etc/services
+ 1038  cat /etc/services | grep '80/tcp'
+ 1039  cat /etc/services | less
+ 1040  which telnet
+ 1041  telnet localhost 8080
+ 1042  ls
+ 1043  ufw --help
+ 1044  ufw app list
+ 1045  ls
+ 1046  useradd pnoul
+ 1047  passwd pnoul
+ 1048  su pnoul
+ 1049  ls
+ 1050  userdel pnoul
+ 1051  cat etc/groups
+ 1052  ls /etc/gr*
+ 1053  ls /etc/passwd
+ 1054  cat /etc/passwd
+ 1055  cat /etc/passwd | grep pnoul
+ 1056  cat /etc/passwd | grep http
+ 1057  cat /etc/passwd | grep nginx
+ 1058  which adduser
+ 1059  adduser pnoul
+ 1060  ls
+ 1061  su pnoul
+ 1062  ls
+ 1063  groups
+ 1064  group
+ 1065  groups --help
+ 1066  cat /etc/groups
+ 1067  cat /etc/group
+ 1068  cat /etc/group | sudo
+ 1069  cat /etc/group | grep sudo
+ 1070  ls
+ 1071  usermod -aG sudo pnoul
+ 1072  ls
+ 1073  cat /etc/group | grep sudo
+ 1074  ls
+ 1075  su pnoul
+ 1076  ufw disable
+ 1077  ls
+ 1078  history
+ 1079  history | less
+ 1080  iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+ 1081  iptables -A INPUT -p tcp --dport 150150 -j ACCEPT
+ 1082  iptables -A INPUT -p tcp --dport 333444 -j ACCEPT
+ 1083  iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+ 1084  nmap -p 8080 localhost
+ 1085  netstat -lntu
+ 1086  ls
+ 1087  reboot
+ 1088  nmap -p 8080 localhost
+ 1089  ls
+ 1090  nmap -p 9000 localhost
+ 1091  systemctl status cslistener
+ 1092  ufw status verbose
+ 1093  systemctl status
+ 1094  iptables -A INPUT -p tcp --dport 8083 -j ACCEPT
+ 1095  nmap -p 8083 localhost
+ 1096  nmap -p- localhost
+ 1097  ls
+ 1098  ls /var/www
+ 1099  ls /var/www/html
+ 1100  netstat -aln
+ 1101  netstat -aln | less
+ 1102  ls
+ 1103  nmap -p 202333
+ 1104  nmap -p 65535 localhost
+ 1105  iptables -A INPUT tcp --dport 65535 -j ACCEPT
+ 1106  iptables -A INPUT -p tcp --dport 65535 -j ACCEPT
+ 1107  nmap -p 66635 localhost
+ 1108  nmap -p 65535 localhost
+ 1109  ufw enable
+ 1110  sudo systemctl status ufw
+ 1111  reboot
+ 1112  telnet localhost 4000
+ 1113  telnet localhost 65535
+ 1114  history
+ 1115  telnet localhost 80
+ 1116  nmap -p 80 localhost
+ 1117  history
+ 1118  telnet localhost 65535
+ 1119  systemctl status ufw
+ 1120  ufw allow 65535
+ 1121  ls -l
+ 1122  ls -l /
+ 1123  ls /
+ 1124  ls -l /
+ 1125  ls | nc
+ 1126  ls | nc -l -p 80
+ 1127  ls | nc -l -p 4000
+ 1128  history
+ 1129  ls | nc -l -p 65535
+ 1130  ls
+ 1131  ./check_conf.sh 
+ 1132  history | grep tail
+ 1133  tail -f /var/log/nginx/access.log
+ 1134  ls /var/log/nginx
+ 1135  systemctl status nginx
+ 1136  systemctl restart nginx
+ 1137  tail -f /var/log/nginx/access.log
+ 1138  ls
+ 1139  ./check_conf.sh 
+ 1140  tail -f /var/log/nginx/access.log
+ 1141  ls
+ 1142  cd /var/log
+ 1143  ls
+ 1144  cd /var/www/html
+ 1145  ls
+ 1146  cat index.html
+ 1147  ls
+ 1148  cd
+ 1149  ls
+ 1150  cd /etc/nginx
+ 1151  ls
+ 1152  cat nginx.conf
+ 1153  ls
+ 1154  ls sites-enabled
+ 1155  ls conf.d
+ 1156  cat conf.d/agent_factory.conf 
+ 1157  nginx -t
+ 1158  nginx -s reload
+ 1159  history | grep tail
+ 1160  tail -f /var/log/nginx/access.log
+ 1161  cd /var/log
+ 1162  ls
+ 1163  ufw disable
+ 1164  ls
+ 1165  cd
+ 1166  nginx -t
+ 1167  ls
+ 1168  ./check_conf.sh 
+ 1169  tail -f /var/log/nginx/access.log
+ 1170  ./check_conf.sh 
+ 1171  ls
+ 1172  tail -f /var/log/nginx/access.log
+ 1173  ls
+ 1174  ./check_conf.sh 
+ 1175  which node
+ 1176  ls
+ 1177  cd /var/wwww/html
+ 1178  ls
+ 1179  cd /var/www/html
+ 1180  ls
+ 1181  ls administration/
+ 1182  ls
+ 1183  cd administration/
+ 1184  ls
+ 1185  cat index.html
+ 1186  ls
+ 1187  rm -rdf *
+ 1188  ls
+ 1189  cd /
+ 1190  ls
+ 1191  cd root
+ 1192  ls
+ 1193  tar -tvf agent_factory-v0.0.1.tar.gz 
+ 1194  ls
+ 1195  ls srv
+ 1196  mv srv/administration/* /var/www/html/administration
+ 1197  ls
+ 1198  cp agent_factory-v0.0.1.tar.gz .agent_factory-v0.0.1.tar.gz
+ 1199  ls -a
+ 1200  ls
+ 1201  cd /var/www/html
+ 1202  ls
+ 1203  ls administration/
+ 1204  ls
+ 1205  cd /
+ 1206  ls
+ 1207  cd /root
+ 1208  ls
+ 1209  ls srv
+ 1210  mv srv/gameplay/* /var/www/html/gameplay/
+ 1211  ls
+ 1212  cd /var/www/html
+ 1213  ls
+ 1214  cd gameplay
+ 1215  ls
+ 1216  cd ./
+ 1217  cd ../
+ 1218  ls
+ 1219  cd /root
+ 1220  ls
+ 1221  ls srv/gameplay
+ 1222  ls -l srv/gameplay
+ 1223  ls
+ 1224  exit
+ 1225  ls
+ 1226  ls .ssh
+ 1227  ls
+ 1228  rm -rdf quirky_Frodo/
+ 1229  ls
+ 1230  cat localhost
+ 1231  ls
+ 1232  rm localhost
+ 1233  ls
+ 1234  ls agentfactory/
+ 1235  ls
+ 1236  file agent_factory-v0.0.1.tar.gz 
+ 1237  ls
+ 1238  cat check_conf.sh
+ 1239  ls
+ 1240  exit
+ 1241  ls
+ 1242  cd /
+ 1243  ls
+ 1244  cd /var/www/html
+ 1245  ls
+ 1246  cat index.html
+ 1247  ls
+ 1248  cd ../
+ 1249  ls
+ 1250  ls html
+ 1251  cd ../
+ 1252  ls
+ 1253  cd ../
+ 1254  ls
+ 1255  ls /etc/nginx
+ 1256  ls /etc/nginx/conf.d
+ 1257  ls
+ 1258  cd etc/nginx
+ 1259  ls
+ 1260  cat nginx.conf
+ 1261  ls
+ 1262  cd conf.d
+ 1263  ls
+ 1264  rm agent_factory.conf
+ 1265  ls
+ 1266  nginx -s reload
+ 1267  ls
+ 1268  cat agent_factory.nginx.conf
+ 1269  ls
+ 1270  vi agent_factory.nginx.conf 
+ 1271  sudo nano /etc/mosquitto/conf.d/default.conf
+ 1272  systemtl restart mosquitto.service
+ 1273  systemctl restart mosquitto.service
+ 1274  sudo systemctl restart mosquitto.service
+ 1275  sudo systemctl status mosquitto.service
+ 1276  sudo systemctl start mosquitto.service
+ 1277  journalctl -u mosquitto.service -n 200 -f
+ 1278  history
+ 1279  sudo nano /etc/mosquitto/conf.d/default.conf
+ 1280  journalctl -u mosquitto.service -n 200 -f
+ 1281  sudo systemctl start mosquitto.service
+ 1282  journalctl -u mosquitto.service -n 200 -f
+ 1283  history
+ 1284  sudo systemctl status agentfactory.service
+ 1285  journalctl -u agentfactory.service -n 200 -f
+ 1286  sudo systemctl start agentfactory.service
+ 1287  hostname -I
+ 1288  sudo nano /etc/mosquitto/conf.d/default.conf
+ 1289  hostname -I
+ 1290  exit
+ 1291  cd /etc/nginx/
+ 1292  ls
+ 1293  cd conf.d
+ 1294  ls
+ 1295  cat agent_factory.nginx.conf 
+ 1296  vi agent_factory.nginx.conf 
+ 1297  ls
+ 1298  nginx -s reload
+ 1299  ls
+ 1300  nginx -t test
+ 1301  nginx -t
+ 1302  cd /
+ 1303  ls
+ 1304  cd /root
+ 1305  ls
+ 1306  a
+ 1307  ls
+ 1308  rm -rdf etc snap srv
+ 1309  ls
+ 1310  rm *.tar.gz
+ 1311  ls
+ 1312  ls agentfactory/
+ 1313  ls
+ 1314  ls -a
+ 1315  rm *.agent*.tar.gz
+ 1316  rm .*.tar.gz
+ 1317  ls
+ 1318  nginx -s reload
+ 1319  ./check_conf.sh 
+ 1320  ls
+ 1321  iptables -A INPUT -p tcp --dport 9001 -j ACCEPT
+ 1322  nmap -p 9001 localhost
+ 1323  exit
+ 1324  nmap -p 9001 localhost
+ 1325  nmap -p- localhost
+ 1326  systemctl status mqtt
+ 1327  systemctl status
+ 1328  systemctl status nginx
+ 1329  systemctl status mqtt
+ 1330  systemctl status mosquitto*
+ 1331  man mosquitto
+ 1332  ls
+ 1333  d /home/pnoul/projects/intelligent_entertainment/agent_factory/ui/thomas/
+ 1334  cd /home/pnoul/projects/intelligent_entertainment/agent_factory/ui/thomas/
+ 1335  cd /var/www/
+ 1336  ls
+ 1337  cd html/
+ 1338  ls
+ 1339  cat index.html 
+ 1340  cat /etc/nginx/
+ 1341  cat /etc/nginx/conf.d/agent_factory.nginx.conf 
+ 1342  curl localhost:4000
+ 1343  curl localhost
+ 1344  sudo systemctl stop nginx.service 
+ 1345  sudo systemctl start nginx.service 
+ 1346  cd /var/www/html/
+ 1347  ls
+ 1348  cd gameplay/
+ 1349  ls
+ 1350  cp -r ~/agentfactory/gameplay/* /var/www/html/gameplay
+ 1351  sudo systemctl stop nginx.service 
+ 1352  sudo systemctl start nginx.service 
+ 1353  journalctl -u agentfactory.service -n 200 -f
+ 1354  lscpu
+ 1355  hwinfo
+ 1356  cat /proc/cpuinfo
+ 1357  systeminfo
+ 1358  grep MemTotal /proc/meminfo
+ 1359  history > history_for_print.txt

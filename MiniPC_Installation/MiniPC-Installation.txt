@@ -1,0 +1,120 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+POWERSHELL-COMMANDS
+
+1. Get-LocalUser | Select *
+*  -- You get all the accounts of Windows with some information
+
+CMD
+
+1. wmic USERACCOUNT get Caption,Name,PasswordRequired,Status
+*  -- You get all the accounts of Windows with some information
+
+RUN
+
+1. netplwiz
+*  -- You get all the accounts of Windows with some information
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+0.  Install -> Chrome
+
+1.  Install -> Laragon
+		1.1 CheckSetting ->Startup when Windows start/Run minimized
+		
+2.  Install -> VS Code
+
+3.  Install -> Python 3.9.2
+		3.1 requirements
+		
+4.  startup.bat
+
+5.  Create Folder -> C:/IE/Software
+
+6.  Windows Settings ->Power Settings:Never Turn OFF
+
+7.  Install -> Anydesk ID/Installation
+
+8.  Windows Settings -> Remove Cortana/Minimize Search buttons/Remove NEWS
+
+9.  ***Apache URL-Config
+	9.1 Copy the httpd.conf file from Materials/Laragon to C:\laragon\bin\apache\httpd-2.4.54-win64-VS16\conf
+	
+10. Startup Programms/Remove OneDrive
+	10.1 C:\Users\Mindtrap\Desktop\GeneralPC-Installation\Materials\Windows-Update-Disabler-Main/RemoveOneDrive.ps1
+	     RightClick on RemoveOneDrive.ps1 , then Run with Powershell	
+		 
+11. Focus assist/Alarms Only
+
+12. Mumble installations ->Inside Documents 
+
+13. Arduino IDE ->1.8.9 Installation
+
+14. Run Windows-Update-Disabler-Main/Pressme_Disable_Windows_Updates.bat as an Administrator
+	14.1 Go C:\Users\Mindtrap\Desktop\GeneralPC-Installation\Materials\Windows-Update-Disabler-Main
+
+15. RemoveOneDrive.ps1 run it from Powershell
+
+16. Change the notifications settings according to the Notifactions_Settings.png
+		Just disable everything
+
+17. Install Arduino/IP Scan/VNC Viewer
+
+18. 
+	18.1 Open Sound Settings then Sound Control Panel go to Sounds(Tab) and then Check 'Play Windows Startup sound'
+	18.2 Run startup-sound-changer-1.0.exe ->To change the default Windows Boot Sound
+
+19. Rename-Computer -NewName "ieclient1" , via Powershell
+
+20. Power options -> Performance Boost and Additional Settings NEVER TURN OFF EveRYTHING
+
+21. Sigh in option -> Uncheck option , to prompt password after a long time
+
+22. Remote Desktop Settings ->Enable
+
+23. Rename-Computer -NewName "ieclient1" , via Powershell
+
+24. Open Settings, then go to Apps > Apps & Features.
+	Go to Optional Features.
+       OpenSSH Server
+	   
+25. Services.msc Enable on Startup OpenSSH Server
+
+26. Open any Folder go to View->Options->View->Uncheck 'Hide extensions for known file types'
+
+27. Never let Windows password Expire -> Run in CMD -> wmic UserAccount set PasswordExpires=False
+
+28. Make Windows Terminal Colourfull -> Run in CMD -> reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000001 /f
+
+29. Type in Menu -> Change User Account Control Settings -> Put it to NEVER
+
+30. Install Bonjour
+      Open CMD
+      Type:hostname
+
+      Open Powershell:
+      Type:Rename-Computer -NewName "MGServer"
+	  
+31. Windows Auto-Login
+	--------To use Registry Editor to turn on automatic logon, follow these steps:------
+	
+	1.Click Start, and then click Run.
+	2.In the Open box, type Regedit.exe, and then press Enter.
+	3.Locate the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon subkey in the registry.
+	4.Double-click the DefaultUserName entry, type your user name, and then click OK.
+	5.Double-click the DefaultPassword entry, type your password, and then click OK.
+	6.If the DefaultPassword value does not exist, it must be added. To add the value, follow these steps:
+	7.On the Edit menu, click New, and then point to String Value.
+	8.Type DefaultPassword, and then press Enter.
+	9.Double-click DefaultPassword.
+	10.In the Edit String dialog, type your password and then click OK.
+	11.If no DefaultPassword string is specified, Windows automatically changes the value of the AutoAdminLogon key from 1 (true) to 0 (false), disabling the AutoAdminLogon feature.
+	12.On the Edit menu, click New, and then point to String Value.
+	13.Type AutoAdminLogon, and then press Enter.
+	14.Double-click AutoAdminLogon.
+	15.In the Edit String dialog box, type 1 and then click OK.
+	17.Exit Registry Editor.
+	18.Click Start, click Shutdown, and then type a reason in the Comment text box.
+	19.Click OK to turn off your computer.
+	20.Restart your computer. You can now log on automatically.

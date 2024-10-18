@@ -1,0 +1,1 @@
+mysql -u pavlos -p -D agent_factory -e "SET FOREIGN_KEY_CHECKS=0; SOURCE /home/agentfactory/Documents/mysql.backup.sql; SET FOREIGN_KEY_CHECKS=1;"
