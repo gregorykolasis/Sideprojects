@@ -132,7 +132,7 @@ class Programmer( mySerial , myKeyboard ):
         return chosenBuildFile
         
 
-    def findBuildName(self):
+    def findBuildName(self): #not used
         checkName='Unknown'
         ext = ('.bin','.elf','.map')
         for files in os.listdir(f"{path}/Build"):
