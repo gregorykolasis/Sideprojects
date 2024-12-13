@@ -1,0 +1,13 @@
+
+1. How to handle the Old-Codes for Mindtrap , located in RPI4
+
+ *)   Be carefull with the update() in Bounce2_CUSTOM.h it should be always there DON'T COMMENT out for your DEV
+	  When you create new UNOS/NANOS code please don't use Bounce2_CUSTOM.h , rather you must use Bounce2.h
+
+ i)   Update and Adjust the Code with the new Extra.h , and PCB_Pins.h like shown in Inglostand/Age.h
+ 
+ ii)  Comment HXHTIKO from the Code , because HXHTIKO is being played by server.py now
+ 
+ iii) Change Serial baudrate to 115200
+ 
+ iv ) Maybe create again the database from config.xls
