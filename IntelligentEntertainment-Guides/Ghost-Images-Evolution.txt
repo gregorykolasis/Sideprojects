@@ -1,0 +1,12 @@
+
+->General_Use_Ultimate has additions from AF_Client_Image_Dell
+
+1. Install Newest Bonjour
+2. thk.003mk6_password_123.zip , Windows10Activator
+3. go to System Configuration and delete all the other Boot Partitions
+4. install on startup , the openProgramsStartup.py
+5. Go to User Account Control Settings and put it ALWAYS NOTIFY to Never
+
+6. Make Wol work
+   Go to Control Panel\Hardware and Sound\Power Options\System Settings
+   Disable Turn on fast startup
