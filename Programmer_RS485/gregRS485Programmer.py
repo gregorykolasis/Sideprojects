@@ -17,7 +17,6 @@ path = os.path.abspath(os.path.join(__file__, "../"))
 
 class Programmer( mySerial , myKeyboard , myRS485Programmer ):
 
-
     buildfile = 'Unknown'
     port  = 'Unknown'
     skip        = 'No'
@@ -133,7 +132,7 @@ class Programmer( mySerial , myKeyboard , myRS485Programmer ):
         try:
             await self.open_connection(searchPort=False)
             firmwareFileFullPath = f"{path}/Build/{self.buildfile}.ino.bin"
-            self.loop.create_task(self.update_firmware(filePath = firmwareFileFullPath,slave_address=1))
+            self.loop.create_task(self.update_firmware(filePath = firmwareFileFullPath, slave_address = 1 , bus_num = 0))
         except Exception as e:
             print(f"[ERROR]: Exiting with returnCode:{1} Errors:{e}")
             self.loopCleanup()
