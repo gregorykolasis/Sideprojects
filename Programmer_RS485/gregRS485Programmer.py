@@ -12,6 +12,7 @@ from libs.mySerial import mySerial
 from libs.myKeyboard import myKeyboard
 from libs.myLogger import setLogger
 from libs.myRS485Programmer import myRS485Programmer
+from libs.myConfig  import MyConfig
 
 path = os.path.abspath(os.path.join(__file__, "../"))
 
@@ -132,7 +133,9 @@ class Programmer( mySerial , myKeyboard , myRS485Programmer ):
         try:
             await self.open_connection(searchPort=False)
             firmwareFileFullPath = f"{path}/Build/{self.buildfile}.ino.bin"
-            self.loop.create_task(self.update_firmware(filePath = firmwareFileFullPath, slave_address = 1 , bus_num = 0))
+            self.firmware_file_path = firmwareFileFullPath
+            self.configurator = MyConfig(f"{path}/config.ini")
+            self.loop.create_task(self.execute_programmer())
         except Exception as e:
             print(f"[ERROR]: Exiting with returnCode:{1} Errors:{e}")
             self.loopCleanup()

@@ -1,6 +1,12 @@
 from wakeonlan import send_magic_packet
 
-spectrumdice2 = 'E4-3A-6E-5D-6A-9B'
-spectrumdice1 = 'E4-3A-6E-5D-6A-9C'
+mac = 'C8-7F-54-65-F1-DF'
 
-send_magic_packet(spectrumdice1)
+try:
+    print(f"Sending WOL Packet on Mac:{mac}")
+    send_magic_packet(mac)
+except Exception as e:
+    print(f"Error {e} sending WOL Packet on Mac:{mac}")
+
+while True:
+    x=1
